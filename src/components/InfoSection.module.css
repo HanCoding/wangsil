@@ -1,0 +1,132 @@
+/* InfoSection.module.css */
+
+.section {
+  padding: var(--section-padding) 0 0;
+  background: var(--color-white);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 var(--container-padding);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grid - full bleed */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-beige);
+  padding: 48px 24px;
+  text-align: center;
+  overflow: hidden;
+  border-right: 1px solid var(--color-beige-dark);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease, background 0.3s ease;
+}
+
+.card:last-child {
+  border-right: none;
+}
+
+.card.cardVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  background: var(--color-beige-dark);
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.iconWrap {
+  color: var(--color-taupe);
+  transition: color var(--transition-fast), transform var(--transition-smooth);
+}
+
+.card:hover .iconWrap {
+  color: var(--color-gold-dark);
+  transform: translateY(-4px);
+}
+
+.cardLabelKo {
+  font-family: var(--font-korean);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-text);
+  letter-spacing: 0.05em;
+}
+
+.cardLabelEn {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--color-taupe);
+  font-weight: 300;
+}
+
+.hoverLine {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transition: transform var(--transition-smooth);
+  transform-origin: left;
+}
+
+.card:hover .hoverLine {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    border-bottom: 1px solid var(--color-beige-dark);
+    border-right: 1px solid var(--color-beige-dark);
+    padding: 36px 20px;
+  }
+
+  .card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .card:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 28px 16px;
+  }
+}

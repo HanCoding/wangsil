@@ -1,0 +1,24 @@
+/* App.css */
+
+/* Offset main content for fixed header (~36px topbar + 64px nav) */
+main {
+  padding-top: 100px;
+}
+
+/* Mobile: smaller header offset */
+@media (max-width: 600px) {
+  main {
+    padding-top: 56px;
+  }
+}
+
+/* Mobile floating buttons - add bottom padding to avoid overlap */
+@media (max-width: 768px) {
+  main, footer {
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+
+  .footer-wrap {
+    padding-bottom: 60px;
+  }
+}

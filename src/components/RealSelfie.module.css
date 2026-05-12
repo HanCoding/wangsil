@@ -1,0 +1,226 @@
+/* RealSelfie.module.css */
+
+.section {
+  padding: var(--section-padding) 0;
+  background: var(--color-beige);
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.moreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  transition: color var(--transition-fast);
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+
+.moreBtn:hover {
+  color: var(--color-gold-dark);
+  border-bottom-color: var(--color-gold);
+}
+
+.plusIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid currentColor;
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+/* Main Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 16px;
+  align-items: stretch;
+}
+
+/* Mosaic */
+.mosaicGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 180px);
+  gap: 6px;
+}
+
+.mosaicGrid .mosaicCell {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.mosaicGrid.visible .mosaicCell {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.mosaicCell {
+  position: relative;
+  overflow: hidden;
+}
+
+.mosaicCell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.mosaicCell:hover img {
+  transform: scale(1.08);
+}
+
+.cellOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(42, 31, 24, 0);
+  transition: background var(--transition-fast);
+}
+
+.mosaicCell:hover .cellOverlay {
+  background: rgba(42, 31, 24, 0.12);
+}
+
+/* Review Card */
+.reviewCard {
+  background: var(--color-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  gap: 24px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.7s 0.4s ease, transform 0.7s 0.4s ease;
+}
+
+.reviewCard.reviewVisible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reviewBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(201, 169, 110, 0.4);
+  position: relative;
+}
+
+.reviewBadge::before {
+  content: '';
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  border: 1px solid rgba(201, 169, 110, 0.2);
+}
+
+.clinicMark {
+  font-family: var(--font-korean);
+  font-size: 0.75rem;
+  color: var(--color-gold-light);
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: 300;
+}
+
+.reviewContent {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.reviewTag {
+  font-family: var(--font-korean);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  letter-spacing: 0.05em;
+}
+
+.reviewSub {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: var(--color-taupe);
+  line-height: 1.5;
+}
+
+.reviewStars {
+  font-size: 0.85rem;
+  color: var(--color-gold);
+  letter-spacing: 2px;
+}
+
+.reviewNote {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  color: rgba(160, 120, 64, 0.5);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviewCard {
+    flex-direction: row;
+    padding: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .reviewCard.reviewVisible {
+    transform: translateY(0);
+  }
+
+  .mosaicGrid {
+    grid-template-rows: repeat(2, 140px);
+  }
+}
+
+@media (max-width: 580px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .mosaicGrid {
+    grid-template-rows: repeat(2, 110px);
+    gap: 4px;
+  }
+
+  .reviewCard {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+  }
+}
