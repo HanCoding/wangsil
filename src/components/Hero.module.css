@@ -200,9 +200,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    height: 460px;
-    align-items: flex-end;
-    padding-bottom: 60px;
+    min-height: 520px;
+    align-items: flex-start;
   }
 
   .bgOverlay {
@@ -215,7 +214,7 @@
   }
 
   .content {
-    padding-top: 0;
+    padding-top: 120px;
   }
 
   .textBlock {
@@ -236,10 +235,15 @@
   }
 }
 
+@media (max-width: 600px) {
+  .content {
+    padding-top: 76px;
+  }
+}
+
 @media (max-width: 480px) {
   .hero {
-    height: 400px;
-    padding-bottom: 48px;
+    min-height: 480px;
   }
 
   .ctaPrimary,

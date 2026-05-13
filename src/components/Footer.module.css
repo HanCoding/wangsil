@@ -119,6 +119,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .footer {
+    padding-bottom: 80px;
+  }
+
   .inner {
     grid-template-columns: 1fr;
     gap: 32px;
