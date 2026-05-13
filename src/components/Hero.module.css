@@ -239,6 +239,7 @@
 @media (max-width: 600px) {
   .content {
     padding-top: 76px;
+    padding-bottom: 48px;
   }
 }
 
