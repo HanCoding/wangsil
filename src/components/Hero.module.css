@@ -200,6 +200,7 @@
 
 @media (max-width: 768px) {
   .hero {
+    height: auto;
     min-height: 520px;
     align-items: flex-start;
   }
