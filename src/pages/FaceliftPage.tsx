@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './FaceliftPage.module.css'
 
-const HERO_BG = 'https://images.unsplash.com/photo-1487412720507-265dfe61b1d0?auto=format&w=1400&q=80'
+const HERO_BG = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&w=1400&q=80'
 
 const infoBoxes = [
   { label: '수술시간', value: '2~3시간' },
@@ -151,7 +151,7 @@ export default function FaceliftPage() {
                   <span className={styles.baCaseLabel}>Before</span>
                 </div>
                 <div className={styles.baCaseImgWrap}>
-                  <img src="https://images.unsplash.com/photo-1487412720507-265dfe61b1d0?auto=format&w=300&q=80" alt="After" />
+                  <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&w=300&q=80" alt="After" />
                   <span className={styles.baCaseLabel}>After</span>
                 </div>
               </div>

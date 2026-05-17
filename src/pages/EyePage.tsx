@@ -146,7 +146,7 @@ export default function EyePage() {
             </div>
             <div className={styles.featureCardRight}>
               <img
-                src="https://images.unsplash.com/photo-1523264655968-9c5b0a851e8a?auto=format&w=500&q=80"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&w=500&q=80"
                 alt="눈매교정 전후"
               />
             </div>
@@ -158,7 +158,7 @@ export default function EyePage() {
       <section className={styles.hexSection}>
         <div className={styles.hexBgImg}>
           <img
-            src="https://images.unsplash.com/photo-1487412720507-265dfe61b1d0?auto=format&w=1400&q=80"
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&w=1400&q=80"
             alt=""
           />
           <div className={styles.hexOverlay} />
