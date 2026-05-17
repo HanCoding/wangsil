@@ -124,8 +124,13 @@
   white-space: nowrap;
 }
 
-.navLink:hover {
+.navLink:hover,
+.navLink.active {
   color: var(--color-gold);
+}
+
+.navItem:has(.active)::after {
+  transform: scaleX(1);
 }
 
 .navItem::after {

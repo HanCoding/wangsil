@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import styles from './Header.module.css'
 
 interface NavItem {
   label: string
   href: string
-  children?: { label: string; href: string }[]
 }
 
 const navItems: NavItem[] = [
@@ -13,21 +13,24 @@ const navItems: NavItem[] = [
   { label: '눈성형', href: '/eye' },
   { label: '코성형', href: '/nose' },
   { label: '안면거상', href: '/facelift' },
-  { label: '안면거상', href: '/facelift2' },
-  { label: '쁘띠로 예뻐…', href: '/petit' },
-  { label: '레이저 이뻐…', href: '/laser' },
   { label: '커뮤니티', href: '/community' },
 ]
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60)
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  useEffect(() => {
+    setMenuOpen(false)
+    window.scrollTo(0, 0)
+  }, [location.pathname])
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
@@ -36,9 +39,9 @@ export default function Header() {
         <div className="container">
           <div className={styles.topBarInner}>
             <div className={styles.topLinks}>
-              <a href="/community/notice">공지사항</a>
+              <Link to="/community/notice">공지사항</Link>
               <span className={styles.divider}>|</span>
-              <a href="/events" className={styles.highlight}>이벤트</a>
+              <Link to="/events" className={styles.highlight}>이벤트</Link>
             </div>
             <a href="https://pf.kakao.com" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -55,19 +58,24 @@ export default function Header() {
       <nav className={styles.nav}>
         <div className="container">
           <div className={styles.navInner}>
-            <a href="/" className={styles.logo}>
+            <Link to="/" className={styles.logo}>
               <img
                 src="https://alice4871277.aty.kr/1774005383242/image/resize_8458e95216dd4a7b8de2647db581460e.png"
                 alt="왕실의원 로고"
                 className={styles.logoImg}
               />
-            </a>
+            </Link>
 
             {/* Desktop Nav */}
             <ul className={styles.navList}>
               {navItems.map((item) => (
                 <li key={item.href} className={styles.navItem}>
-                  <a href={item.href} className={styles.navLink}>{item.label}</a>
+                  <Link
+                    to={item.href}
+                    className={`${styles.navLink} ${location.pathname === item.href ? styles.active : ''}`}
+                  >
+                    {item.label}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -91,7 +99,7 @@ export default function Header() {
         <ul>
           {navItems.map((item) => (
             <li key={item.href}>
-              <a href={item.href} onClick={() => setMenuOpen(false)}>{item.label}</a>
+              <Link to={item.href} onClick={() => setMenuOpen(false)}>{item.label}</Link>
             </li>
           ))}
         </ul>
