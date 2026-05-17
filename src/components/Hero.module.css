@@ -50,7 +50,6 @@
 .content {
   position: relative;
   z-index: 2;
-  padding-top: 100px;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.9s ease, transform 0.9s ease;
@@ -215,7 +214,7 @@
   }
 
   .content {
-    padding-top: 120px;
+    padding-top: 0;
   }
 
   .textBlock {
@@ -238,8 +237,8 @@
 
 @media (max-width: 600px) {
   .content {
-    padding-top: 76px;
-    padding-bottom: 48px;
+    padding-top: 0;
+    padding-bottom: 24px;
   }
 }
 
