@@ -43,7 +43,7 @@ export default function Header() {
               <span className={styles.divider}>|</span>
               <Link to="/events" className={styles.highlight}>이벤트</Link>
             </div>
-            <a href="https://pf.kakao.com" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
+            <a href="https://pf.kakao.com/_ySgVX" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12 3C6.477 3 2 6.477 2 10.858c0 2.742 1.564 5.157 3.942 6.672L5.1 20.5a.5.5 0 0 0 .702.58l4.042-2.35A11.6 11.6 0 0 0 12 18.716c5.523 0 10-3.477 10-7.858S17.523 3 12 3z"/>
               </svg>

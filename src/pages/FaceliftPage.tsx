@@ -175,7 +175,7 @@ export default function FaceliftPage() {
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <a href="https://pf.kakao.com" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
+          <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
             온라인상담 신청하기
           </a>
         </div>

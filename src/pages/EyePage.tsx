@@ -140,7 +140,7 @@ export default function EyePage() {
               <p className={styles.featureCardNote}>
                 짧은 수술시간, 수술 후<br />회복기간 없이 바로 일상생활 가능!
               </p>
-              <a href="https://pf.kakao.com" className={styles.featureBtn} target="_blank" rel="noopener noreferrer">
+              <a href="https://pf.kakao.com/_ySgVX" className={styles.featureBtn} target="_blank" rel="noopener noreferrer">
                 온라인상담 바로가기
               </a>
             </div>
@@ -212,7 +212,7 @@ export default function EyePage() {
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <a href="https://pf.kakao.com" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
+          <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
             온라인상담 신청하기
           </a>
         </div>
