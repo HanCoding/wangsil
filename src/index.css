@@ -4,6 +4,8 @@
    ============================================ */
 
 :root {
+  color-scheme: light;
+
   /* Color Palette */
   --color-gold: #c9a96e;
   --color-gold-light: #e8d5b0;
