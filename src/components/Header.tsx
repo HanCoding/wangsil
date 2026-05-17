@@ -36,8 +36,6 @@ export default function Header() {
         <div className="container">
           <div className={styles.topBarInner}>
             <div className={styles.topLinks}>
-              <a href="/login">로그인</a>
-              <span className={styles.divider}>|</span>
               <a href="/community/notice">공지사항</a>
               <span className={styles.divider}>|</span>
               <a href="/events" className={styles.highlight}>이벤트</a>
