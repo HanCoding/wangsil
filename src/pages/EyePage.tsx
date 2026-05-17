@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import styles from './EyePage.module.css'
 import KakaoButton from '../components/KakaoButton'
 
@@ -57,6 +58,11 @@ export default function EyePage() {
 
   return (
     <div className={styles.page}>
+      <Helmet>
+        <title>눈성형 | 왕실의원 - 쌍커풀·눈매교정·트임성형</title>
+        <meta name="description" content="왕실의원 눈성형 전문 클리닉. 쌍커풀(매몰·절개), 앞트임·외안각트임, 눈매교정, 애교살 수술. 인천 부평 032-435-3571" />
+        <link rel="canonical" href="https://wangsil.pages.dev/eye" />
+      </Helmet>
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>

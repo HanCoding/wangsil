@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import styles from './AboutPage.module.css'
 
 const HERO_BG = 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&w=1400&q=80'
@@ -39,6 +40,11 @@ export default function AboutPage() {
 
   return (
     <div className={styles.page}>
+      <Helmet>
+        <title>병원소개 | 왕실의원 - 인천 부평 성형외과</title>
+        <meta name="description" content="왕실의원 원장 소개 및 병원 안전 시스템. 15년 경력의 전문 성형외과 의료진이 상담부터 수술, 사후관리까지 직접 담당합니다." />
+        <link rel="canonical" href="https://wangsil.pages.dev/about" />
+      </Helmet>
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>

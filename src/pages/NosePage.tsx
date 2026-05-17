@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import styles from './NosePage.module.css'
 import KakaoButton from '../components/KakaoButton'
 
@@ -33,6 +34,11 @@ export default function NosePage() {
 
   return (
     <div className={styles.page}>
+      <Helmet>
+        <title>코성형 | 왕실의원 - 바비인형 코수술 전문</title>
+        <meta name="description" content="왕실의원 코성형 전문 클리닉. 바비인형 코수술, 코끝성형, 콧볼축소, 매부리코 교정. 3DCT 정밀 진단, 1:1 맞춤 상담. 인천 부평 032-435-3571" />
+        <link rel="canonical" href="https://wangsil.pages.dev/nose" />
+      </Helmet>
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>

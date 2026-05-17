@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet-async'
 import styles from './FaceliftPage.module.css'
 import KakaoButton from '../components/KakaoButton'
 
@@ -39,6 +40,11 @@ export default function FaceliftPage() {
 
   return (
     <div className={styles.page}>
+      <Helmet>
+        <title>안면거상 | 왕실의원 - 이마거상·중안면거상·목거상</title>
+        <meta name="description" content="왕실의원 안면거상 전문 클리닉. 처진 피부와 근막층 동시 교정. 안면거상·이마거상·중안면거상·목거상. 자연스러운 윤곽 회복. 인천 부평 032-435-3571" />
+        <link rel="canonical" href="https://wangsil.pages.dev/facelift" />
+      </Helmet>
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
