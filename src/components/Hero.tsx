@@ -40,15 +40,6 @@ export default function Hero() {
             대표원장이 <strong>상담부터 수술, 사후관리</strong>까지 직접 담당합니다.<br />
             의료진의 실력을 직접 느껴보세요
           </p>
-          <div className={styles.ctaGroup}>
-            <a href="/about" className={styles.ctaPrimary}>병원 소개 보기</a>
-            <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaKakao} target="_blank" rel="noopener noreferrer">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 3C6.477 3 2 6.477 2 10.858c0 2.742 1.564 5.157 3.942 6.672L5.1 20.5a.5.5 0 0 0 .702.58l4.042-2.35A11.6 11.6 0 0 0 12 18.716c5.523 0 10-3.477 10-7.858S17.523 3 12 3z"/>
-              </svg>
-              카카오 상담
-            </a>
-          </div>
         </div>
       </div>
 
