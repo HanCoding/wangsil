@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from './NosePage.module.css'
+import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&w=1400&q=80'
 
@@ -187,6 +188,13 @@ export default function NosePage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className={styles.ctaSection}>
+        <div className="container">
+          <KakaoButton size="lg" />
         </div>
       </section>
     </div>

@@ -468,3 +468,9 @@
   .featureCardBody { padding: 24px 20px; }
   .baTabs { flex-wrap: wrap; width: auto; }
 }
+
+/* ── CTA ── */
+.ctaSection {
+  padding: 48px 0 64px;
+  text-align: center;
+}

@@ -86,23 +86,6 @@
   color: var(--color-gold-dark);
 }
 
-.consultBtn {
-  display: inline-flex;
-  align-items: center;
-  padding: 9px 18px;
-  background: var(--color-dark);
-  color: var(--color-cream);
-  font-family: var(--font-korean);
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
-  border-radius: 6px;
-  transition: var(--transition-fast);
-}
-
-.consultBtn:hover {
-  background: var(--color-gold-dark);
-}
-
 /* Address */
 .addressBlock {
   display: flex;

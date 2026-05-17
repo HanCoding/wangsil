@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from './EyePage.module.css'
+import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&w=1400&q=80'
 
@@ -140,9 +141,7 @@ export default function EyePage() {
               <p className={styles.featureCardNote}>
                 짧은 수술시간, 수술 후<br />회복기간 없이 바로 일상생활 가능!
               </p>
-              <a href="https://pf.kakao.com/_ySgVX" className={styles.featureBtn} target="_blank" rel="noopener noreferrer">
-                카카오 상담
-              </a>
+              <KakaoButton size="md" />
             </div>
             <div className={styles.featureCardRight}>
               <img
@@ -212,9 +211,7 @@ export default function EyePage() {
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
-            카카오 상담
-          </a>
+          <KakaoButton size="lg" />
         </div>
       </section>
     </div>

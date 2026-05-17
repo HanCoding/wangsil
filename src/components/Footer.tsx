@@ -1,4 +1,5 @@
 import styles from './Footer.module.css'
+import KakaoButton from './KakaoButton'
 
 export default function Footer() {
   return (
@@ -30,7 +31,7 @@ export default function Footer() {
             <div className={styles.phone}>
               <p className={styles.phoneLabel}>대표전화</p>
               <a href="tel:0324353571" className={styles.phoneNumber}>032) 435-3571</a>
-              <a href="https://pf.kakao.com/_ySgVX" className={styles.consultBtn} target="_blank" rel="noopener noreferrer">카카오 상담</a>
+              <KakaoButton size="sm" />
             </div>
 
             <div className={styles.addressBlock}>

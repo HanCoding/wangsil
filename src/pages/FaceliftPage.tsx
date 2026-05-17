@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from './FaceliftPage.module.css'
+import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&w=1400&q=80'
 
@@ -175,9 +176,7 @@ export default function FaceliftPage() {
       {/* CTA */}
       <section className={styles.ctaSection}>
         <div className="container">
-          <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
-            카카오 상담
-          </a>
+          <KakaoButton size="lg" />
         </div>
       </section>
     </div>
