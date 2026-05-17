@@ -176,7 +176,7 @@ export default function FaceliftPage() {
       <section className={styles.ctaSection}>
         <div className="container">
           <a href="https://pf.kakao.com/_ySgVX" className={styles.ctaBtn} target="_blank" rel="noopener noreferrer">
-            온라인상담 신청하기
+            카카오 상담
           </a>
         </div>
       </section>

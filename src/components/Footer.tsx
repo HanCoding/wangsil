@@ -30,7 +30,7 @@ export default function Footer() {
             <div className={styles.phone}>
               <p className={styles.phoneLabel}>대표전화</p>
               <a href="tel:0324353571" className={styles.phoneNumber}>032) 435-3571</a>
-              <a href="/consultation" className={styles.consultBtn}>온라인상담 바로가기</a>
+              <a href="https://pf.kakao.com/_ySgVX" className={styles.consultBtn} target="_blank" rel="noopener noreferrer">카카오 상담</a>
             </div>
 
             <div className={styles.addressBlock}>
