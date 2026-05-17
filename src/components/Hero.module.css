@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  height: 656px;
+  height: 380px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -194,14 +194,14 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .hero {
-    height: 520px;
+    height: 340px;
   }
 }
 
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 520px;
+    min-height: 320px;
     align-items: flex-start;
   }
 
@@ -245,7 +245,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 480px;
+    min-height: 300px;
   }
 
   .ctaPrimary,
