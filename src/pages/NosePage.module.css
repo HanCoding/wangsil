@@ -25,9 +25,9 @@
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(140, 90, 60, 0.82) 0%,
-    rgba(120, 75, 50, 0.65) 50%,
-    rgba(120, 75, 50, 0.08) 100%
+    rgba(140, 90, 60, 0.25) 0%,
+    rgba(120, 75, 50, 0.10) 50%,
+    transparent 100%
   );
 }
 
@@ -278,79 +278,70 @@
   text-align: center;
 }
 
-.ratioBanner {}
-
-.ratioBannerMain {
+.ratioBanner {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/6;
-  overflow: hidden;
 }
 
-.ratioBannerMain img {
+.ratioBannerImg {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
+  height: auto;
+  display: block;
 }
 
 .ratioBannerOverlay {
   position: absolute;
   inset: 0;
-  background: rgba(100, 160, 200, 0.55);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 32px 48px;
-  color: #fff;
+  padding: 0 5%;
+  max-width: 44%;
+  gap: 10px;
 }
 
 .ratioBannerSub {
   font-family: var(--font-body);
-  font-size: 0.82rem;
-  opacity: 0.9;
-  margin-bottom: 8px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.85);
+  letter-spacing: 0.03em;
 }
 
 .ratioBannerTitle {
   font-family: var(--font-korean);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.2rem, 2.8vw, 1.9rem);
   font-weight: 700;
-  line-height: 1.3;
-}
-
-.ratioBannerSubs {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.ratioBannerSubCard {
-  background: rgba(100, 160, 200, 0.85);
-  padding: 28px 24px;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+
+.ratioBannerBullets {
   font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.8;
+  font-size: clamp(0.75rem, 1.1vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.9;
 }
 
 .ratioBannerSubNote {
-  font-size: 0.75rem;
-  opacity: 0.8;
+  font-family: var(--font-body);
+  font-size: clamp(0.65rem, 0.9vw, 0.75rem);
+  color: rgba(255, 255, 255, 0.72);
   line-height: 1.6;
 }
 
-.ratioBannerImgCard {
-  overflow: hidden;
-  aspect-ratio: 1;
+@media (max-width: 768px) {
+  .ratioBannerOverlay {
+    max-width: 55%;
+  }
 }
 
-.ratioBannerImgCard img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+@media (max-width: 480px) {
+  .ratioBannerOverlay {
+    max-width: 100%;
+    background: rgba(100, 160, 210, 0.55);
+    padding: 20px;
+  }
 }
 
 /* ── Before & After ── */
@@ -396,61 +387,42 @@
   background: #fff;
   border: none;
   border-right: 1px solid var(--color-beige-dark);
-  cursor: pointer;
-  transition: all var(--transition-fast);
+  cursor: default;
 }
 
 .baTab:last-child { border-right: none; }
 
-.baTab:hover { background: var(--color-beige); }
-
 .baTabActive {
-  background: var(--color-dark) !important;
-  color: #fff !important;
+  color: var(--color-text-light);
 }
 
 .baGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
   max-width: 860px;
   margin: 0 auto;
 }
 
-.baCase {
-  background: #fff;
-  border: 1px solid var(--color-beige-dark);
-  overflow: hidden;
-}
-
-.baCaseImgs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .baCaseImgWrap {
-  position: relative;
-  aspect-ratio: 3/4;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
 }
 
 .baCaseImgWrap img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .baCaseLabel {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+  padding: 8px 0 6px;
   font-family: var(--font-display);
-  font-size: 0.72rem;
-  color: #fff;
-  background: rgba(0,0,0,0.45);
-  padding: 2px 10px;
-  letter-spacing: 0.1em;
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.12em;
 }
 
 /* ── Responsive ── */
@@ -461,7 +433,7 @@
   .ratioBannerSubs { grid-template-columns: 1fr; }
   .ratioBannerImgCard { aspect-ratio: 16/5; }
 
-  .baGrid { grid-template-columns: 1fr; }
+  .baGrid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 600px) {

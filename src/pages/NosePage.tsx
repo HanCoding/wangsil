@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import styles from './NosePage.module.css'
 import KakaoButton from '../components/KakaoButton'
 
-const HERO_BG = 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&w=1400&q=80'
+const HERO_BG = '/img/nose/banner.png'
 
 const infoBoxes = [
   { label: '수술시간', value: '2시간' },
@@ -125,33 +125,12 @@ export default function NosePage() {
               </p>
             </div>
             <div className={styles.ratioBanner}>
-              <div className={styles.ratioBannerMain}>
-                <img
-                  src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&w=800&q=80"
-                  alt="자연스럽고 아름다운 비율"
-                />
-                <div className={styles.ratioBannerOverlay}>
-                  <p className={styles.ratioBannerSub}>어디서나 자신있고 우아한 옆라인</p>
-                  <p className={styles.ratioBannerTitle}>자연스럽고<br />아름다운 비율</p>
-                </div>
-              </div>
-              <div className={styles.ratioBannerSubs}>
-                <div className={styles.ratioBannerSubCard}>
-                  <p>완벽한 옆라인<br />자연스러운 디자인<br />입체적 페이스라인</p>
-                  <p className={styles.ratioBannerSubNote}>인체공학적 조건과 비율을 고려한<br />황금비율의 라인입니다.</p>
-                </div>
-                <div className={styles.ratioBannerImgCard}>
-                  <img
-                    src="https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?auto=format&w=400&q=80"
-                    alt="수술 장면"
-                  />
-                </div>
-                <div className={styles.ratioBannerImgCard}>
-                  <img
-                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&w=400&q=80"
-                    alt="자연스러운 결과"
-                  />
-                </div>
+              <img src="/img/nose/2.png" alt="자연스럽고 아름다운 비율" className={styles.ratioBannerImg} />
+              <div className={styles.ratioBannerOverlay}>
+                <p className={styles.ratioBannerSub}>어디서나 자신있고 우아한 옆라인</p>
+                <p className={styles.ratioBannerTitle}>자연스럽고<br />아름다운 비율</p>
+                <p className={styles.ratioBannerBullets}>완벽한 옆라인<br />자연스러운 디자인<br />입체적 페이스라인</p>
+                <p className={styles.ratioBannerSubNote}>인체공학적 조건과 비율을 고려한<br />황금비율의 라인입니다.</p>
               </div>
             </div>
           </div>
@@ -169,29 +148,21 @@ export default function NosePage() {
             <button className={styles.baTab}>안면윤곽</button>
           </div>
           <div className={styles.baGrid}>
-            <div className={styles.baCase}>
-              <div className={styles.baCaseImgs}>
-                <div className={styles.baCaseImgWrap}>
-                  <img src="https://images.unsplash.com/photo-1509041322357-8a3f9757a475?auto=format&w=300&q=80" alt="Before" />
-                  <span className={styles.baCaseLabel}>Before</span>
-                </div>
-                <div className={styles.baCaseImgWrap}>
-                  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&w=300&q=80" alt="After" />
-                  <span className={styles.baCaseLabel}>After</span>
-                </div>
-              </div>
+            <div className={styles.baCaseImgWrap}>
+              <img src="/img/nose/before_1.png" alt="Before" />
+              <span className={styles.baCaseLabel}>Before</span>
             </div>
-            <div className={styles.baCase}>
-              <div className={styles.baCaseImgs}>
-                <div className={styles.baCaseImgWrap}>
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&w=300&q=80" alt="Before" />
-                  <span className={styles.baCaseLabel}>Before</span>
-                </div>
-                <div className={styles.baCaseImgWrap}>
-                  <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&w=300&q=80" alt="After" />
-                  <span className={styles.baCaseLabel}>After</span>
-                </div>
-              </div>
+            <div className={styles.baCaseImgWrap}>
+              <img src="/img/nose/after_1.png" alt="After" />
+              <span className={styles.baCaseLabel}>After</span>
+            </div>
+            <div className={styles.baCaseImgWrap}>
+              <img src="/img/nose/before_2.png" alt="Before" />
+              <span className={styles.baCaseLabel}>Before</span>
+            </div>
+            <div className={styles.baCaseImgWrap}>
+              <img src="/img/nose/after_2.png" alt="After" />
+              <span className={styles.baCaseLabel}>After</span>
             </div>
           </div>
         </div>
