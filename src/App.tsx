@@ -14,6 +14,7 @@ import NosePage from './pages/NosePage'
 import FaceliftPage from './pages/FaceliftPage'
 import PettiPage from './pages/PettiPage'
 import LaserPage from './pages/LaserPage'
+import LocationPage from './pages/LocationPage'
 import './App.css'
 
 function HomePage() {
@@ -48,6 +49,7 @@ export default function App() {
           <Route path="/facelift2" element={<FaceliftPage />} />
           <Route path="/petti" element={<PettiPage />} />
           <Route path="/laser" element={<LaserPage />} />
+          <Route path="/community" element={<LocationPage />} />
         </Routes>
       </main>
       <Footer />
