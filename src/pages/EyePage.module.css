@@ -28,9 +28,9 @@
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(230, 180, 140, 0.82) 0%,
-    rgba(210, 155, 110, 0.65) 50%,
-    rgba(210, 155, 110, 0.10) 100%
+    rgba(230, 180, 140, 0.25) 0%,
+    rgba(210, 155, 110, 0.10) 50%,
+    transparent 100%
   );
 }
 
@@ -280,11 +280,12 @@
 
 .featureCard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   border: 1px solid var(--color-beige-dark);
   overflow: hidden;
-  max-width: 860px;
+  max-width: 100%;
   margin: 0 auto;
+  background: #fff;
 }
 
 .featureCardLeft {
@@ -293,6 +294,7 @@
   flex-direction: column;
   gap: 16px;
   justify-content: center;
+  background: #fff;
 }
 
 .featureCardTitle {
@@ -341,8 +343,8 @@
 
 .featureCardRight img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -411,13 +413,13 @@
   display: flex;
   justify-content: flex-end;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .hexItem {}
 
 .hexShape {
-  width: 160px;
+  width: 200px;
   aspect-ratio: 1;
   background: rgba(255,255,255,0.85);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -426,7 +428,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 36px 28px;
   transition: background var(--transition-fast);
 }
 
@@ -560,6 +562,7 @@
   .hexContent { justify-content: center; }
   .hexRight { text-align: center; }
   .hexItems { justify-content: center; }
+  .hexShape { width: 160px; padding: 28px 20px; }
 
   .selfieCard { grid-template-columns: 1fr; }
   .selfieRight { max-height: 220px; }
@@ -568,5 +571,13 @@
 @media (max-width: 600px) {
   .surgeryTypes { flex-direction: column; align-items: center; }
   .plus { transform: rotate(90deg); }
-  .hexShape { width: 130px; }
+  .hexShape { width: 130px; padding: 24px 16px; }
+  .hexItemDesc { font-size: 0.62rem; }
+}
+
+@media (max-width: 430px) {
+  .hexShape { width: 110px; padding: 20px 12px; }
+  .hexItemName { font-size: 0.8rem; }
+  .hexItemDesc { font-size: 0.58rem; }
+  .hexDash { margin-bottom: 4px; }
 }

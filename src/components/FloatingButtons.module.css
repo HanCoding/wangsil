@@ -127,7 +127,7 @@
   }
 
   /* Hide some on mobile to avoid crowding */
-  .floatBtn:nth-child(n+5) {
+  .floatBtn:nth-child(n+4) {
     display: none;
   }
 

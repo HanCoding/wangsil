@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './Hero.module.css'
 
-// Placeholder hero image (gold gradient as fallback)
-const HERO_BG = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1600&q=80&fit=crop'
+const HERO_BG = '/img/main/banner.png'
 
 export default function Hero() {
   const [loaded, setLoaded] = useState(false)

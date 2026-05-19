@@ -256,11 +256,12 @@
 
 .safetyNum {
   font-family: var(--font-display);
-  font-size: 0.75rem;
-  color: var(--color-taupe);
-  letter-spacing: 0.15em;
+  font-size: 1.6rem;
+  color: var(--color-gold);
+  letter-spacing: 0.1em;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  font-weight: 300;
 }
 
 .safetyTitle {

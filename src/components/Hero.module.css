@@ -2,7 +2,7 @@
 
 .hero {
   position: relative;
-  height: 380px;
+  height: clamp(380px, 25.5vw, 660px);
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -193,23 +193,28 @@
 /* Responsive */
 @media (max-width: 1024px) {
   .hero {
-    height: 340px;
+    height: clamp(320px, 33vw, 380px);
   }
 }
 
 @media (max-width: 768px) {
   .hero {
     height: auto;
-    min-height: 320px;
-    align-items: flex-start;
+    min-height: 380px;
+    align-items: flex-end;
+    padding-bottom: 32px;
+  }
+
+  .bgImage {
+    object-position: right top;
   }
 
   .bgOverlay {
     background: linear-gradient(
       to bottom,
-      rgba(250, 248, 244, 0.3) 0%,
-      rgba(250, 248, 244, 0.85) 50%,
-      rgba(250, 248, 244, 0.95) 100%
+      rgba(250, 248, 244, 0.05) 0%,
+      rgba(250, 248, 244, 0.55) 55%,
+      rgba(250, 248, 244, 0.92) 100%
     );
   }
 

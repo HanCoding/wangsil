@@ -22,7 +22,7 @@ const treatments: Treatment[] = [
     description:
       '처진 볼살, 흐려진 턱선, 깊어진 이마 주름까지.\n안면거상·이마거상 전문 클리닉이\n당신의 가장 아름다운 모습을 되찾아 드립니다.',
     points: [],
-    imageUrl: 'https://images.unsplash.com/photo-1527613426441-4da17471b66d?w=800&q=80&fit=crop',
+    imageUrl: '/img/main/1.png',
   },
   {
     id: 'facelift-detail',
@@ -37,7 +37,7 @@ const treatments: Treatment[] = [
       'SMAS 층 정밀 교정으로 자연스러운 결과',
       '절개선을 귀 주변에 숨겨 흉터 최소화',
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=800&q=80&fit=crop',
+    imageUrl: '/img/main/2.png',
   },
   {
     id: 'browlift',
@@ -53,7 +53,7 @@ const treatments: Treatment[] = [
       '내시경 최소절개 방식 적용',
       '피곤하고 무거운 인상 개선',
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&q=80&fit=crop',
+    imageUrl: '/img/main/3.png',
   },
 ]
 

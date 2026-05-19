@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import styles from './EyePage.module.css'
 import KakaoButton from '../components/KakaoButton'
 
-const HERO_BG = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&w=1400&q=80'
+const HERO_BG = '/img/eye/banner.png'
 
 const infoBoxes = [
   { icon: '⏱', label: '수술시간', value: '30분' },
@@ -16,17 +16,17 @@ const surgeryTypes = [
   {
     name: '쌍커풀',
     desc: '풀리지 않는 자연스러운 매몰법\n눈감아도 티안나는 절개법',
-    img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&w=300&q=80',
+    img: '/img/eye/1.png',
   },
   {
     name: '트임성형',
     desc: '답답하고 좁은 눈매교정\n자연스러운 트임',
-    img: 'https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&w=300&q=80',
+    img: '/img/eye/2.png',
   },
   {
     name: '눈매교정',
     desc: '또렷하고 선명한 이미지\n답답한 눈을 밝게',
-    img: 'https://images.unsplash.com/photo-1524593689594-aae2f26b75ab?auto=format&w=300&q=80',
+    img: '/img/eye/3.png',
   },
 ]
 
@@ -151,7 +151,7 @@ export default function EyePage() {
             </div>
             <div className={styles.featureCardRight}>
               <img
-                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&w=500&q=80"
+                src="/img/eye/4.png"
                 alt="눈매교정 전후"
               />
             </div>

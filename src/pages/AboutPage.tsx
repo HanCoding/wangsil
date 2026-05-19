@@ -2,32 +2,32 @@ import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './AboutPage.module.css'
 
-const HERO_BG = 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&w=1400&q=80'
+const HERO_BG = '/img/intro/banner.png'
 
 const safetyItems = [
   {
     num: '01',
     title: '전문의가 직접하는 마취',
     desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&w=700&q=80',
+    img: '/img/intro/2.png',
   },
   {
     num: '02',
     title: '첨단의료장비 보유',
     desc: '최첨단 의료장비와 안전한 수술 환경을 갖추어 환자의 상태를 계속 평가하고 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?auto=format&w=700&q=80',
+    img: '/img/intro/3.png',
   },
   {
     num: '03',
     title: '전문간호사 의료서비스',
     desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&w=700&q=80',
+    img: '/img/intro/4.png',
   },
   {
     num: '04',
     title: '수술 후 토탈케어 서비스',
     desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&w=700&q=80',
+    img: '/img/intro/5.png',
   },
 ]
 
@@ -97,7 +97,7 @@ export default function AboutPage() {
                 <p className={styles.badgeEng}>PLASTIC SURGERY</p>
               </div>
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&w=600&q=80"
+                src="/img/intro/1.png"
                 alt="의료진과 환자 상담"
                 className={styles.greetImg}
               />

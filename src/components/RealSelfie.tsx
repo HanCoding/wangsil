@@ -2,36 +2,12 @@ import { useRef, useEffect, useState } from 'react'
 import styles from './RealSelfie.module.css'
 
 const selfieImages = [
-  {
-    id: 1,
-    src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 1',
-  },
-  {
-    id: 2,
-    src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 2',
-  },
-  {
-    id: 3,
-    src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 3',
-  },
-  {
-    id: 4,
-    src: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 4',
-  },
-  {
-    id: 5,
-    src: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 5',
-  },
-  {
-    id: 6,
-    src: 'https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&q=80&fit=crop&crop=face',
-    alt: '시술 후기 6',
-  },
+  { id: 1, src: '/img/main/4.png', alt: '시술 후기 1' },
+  { id: 2, src: '/img/main/5.png', alt: '시술 후기 2' },
+  { id: 3, src: '/img/main/6.png', alt: '시술 후기 3' },
+  { id: 4, src: '/img/main/7.png', alt: '시술 후기 4' },
+  { id: 5, src: '/img/main/8.png', alt: '시술 후기 5' },
+  { id: 6, src: '/img/main/9.png', alt: '시술 후기 6' },
 ]
 
 function useIntersection() {
