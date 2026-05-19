@@ -14,6 +14,7 @@ const navItems: NavItem[] = [
   { label: '코성형', href: '/nose' },
   { label: '안면거상', href: '/facelift' },
   { label: '쁘띠로', href: '/petti' },
+  { label: '레이저', href: '/laser' },
   { label: '커뮤니티', href: '/community' },
 ]
 
