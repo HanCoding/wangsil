@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './NosePage.module.css'
-import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = '/img/nose/banner.png'
 
@@ -168,12 +167,6 @@ export default function NosePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-        <div className="container">
-          <KakaoButton size="lg" />
-        </div>
-      </section>
     </div>
   )
 }
