@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-left: auto;
   background: var(--color-kakao);
   color: var(--color-dark);
   padding: 4px 12px;
