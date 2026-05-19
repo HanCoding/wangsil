@@ -136,10 +136,6 @@ export default function TreatmentSection() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className={styles.sectionCta}>
-          <a href="/facelift" className={styles.moreBtn}>시술 더 알아보기</a>
-        </div>
       </div>
     </section>
   )
