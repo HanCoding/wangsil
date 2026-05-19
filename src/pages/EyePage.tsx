@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './EyePage.module.css'
-import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = '/img/eye/banner.png'
 
@@ -147,7 +146,6 @@ export default function EyePage() {
               <p className={styles.featureCardNote}>
                 짧은 수술시간, 수술 후<br />회복기간 없이 바로 일상생활 가능!
               </p>
-              <KakaoButton size="md" />
             </div>
             <div className={styles.featureCardRight}>
               <img
@@ -214,12 +212,6 @@ export default function EyePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-        <div className="container">
-          <KakaoButton size="lg" />
-        </div>
-      </section>
     </div>
   )
 }
