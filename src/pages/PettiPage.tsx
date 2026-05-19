@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './PettiPage.module.css'
-import KakaoButton from '../components/KakaoButton'
 
 const HERO_BG = '/img/botox/banner.png'
 
@@ -111,12 +110,7 @@ export default function PettiPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className={styles.ctaSection}>
-        <div className="container">
-          <KakaoButton size="lg" />
-        </div>
-      </section>
+
     </div>
   )
 }
