@@ -2,7 +2,8 @@
 
 .section {
   padding: var(--section-padding) 0;
-  background: var(--color-beige);
+  background: #e8f4f8;
+  border-top: 1px solid #c8dfe8;
 }
 
 .header {

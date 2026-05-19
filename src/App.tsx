@@ -5,7 +5,6 @@ import Hero from './components/Hero'
 import TreatmentSection from './components/TreatmentSection'
 import InfoSection from './components/InfoSection'
 import RealSelfie from './components/RealSelfie'
-import CommunitySection from './components/CommunitySection'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
 import AboutPage from './pages/AboutPage'
@@ -29,7 +28,6 @@ function HomePage() {
       <TreatmentSection />
       <InfoSection />
       <RealSelfie />
-      <CommunitySection />
     </>
   )
 }

@@ -7,27 +7,12 @@ interface InfoCard {
   labelEn: string
   icon: React.ReactNode
   href: string
+  external?: boolean
 }
 
-const CalendarIcon = () => (
-  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="4" y="6" width="28" height="26" rx="2" />
-    <path d="M4 13h28M12 3v6M24 3v6" />
-    <rect x="9" y="18" width="4" height="4" rx="0.5" />
-    <rect x="16" y="18" width="4" height="4" rx="0.5" />
-    <rect x="23" y="18" width="4" height="4" rx="0.5" />
-    <rect x="9" y="25" width="4" height="4" rx="0.5" />
-    <rect x="16" y="25" width="4" height="4" rx="0.5" />
-  </svg>
-)
-
-const GiftIcon = () => (
-  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="4" y="12" width="28" height="6" rx="1" />
-    <rect x="6" y="18" width="24" height="14" rx="1" />
-    <path d="M18 12v20" />
-    <path d="M18 12c0 0-4-8 0-8s4 8 0 8z" />
-    <path d="M18 12c0 0 4-8 0-8" />
+const KakaoIcon = () => (
+  <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" stroke="none">
+    <path d="M18 6C10.82 6 5 10.59 5 16.22c0 3.59 2.27 6.74 5.7 8.61l-1.25 4.6a.4.4 0 0 0 .6.45l5.32-3.08c.85.1 1.72.15 2.63.15 7.18 0 13-4.59 13-10.23C31 10.59 25.18 6 18 6z" />
   </svg>
 )
 
@@ -39,19 +24,9 @@ const PinIcon = () => (
   </svg>
 )
 
-const ChatIcon = () => (
-  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5">
-    <rect x="3" y="5" width="30" height="22" rx="3" />
-    <path d="M10 28l-4 5 6-2" />
-    <path d="M10 14h16M10 20h10" />
-  </svg>
-)
-
 const infoCards: InfoCard[] = [
-  { id: 'cost', label: '비용문의/상담', labelEn: 'COST INFORMATION', icon: <CalendarIcon />, href: '/cost' },
-  { id: 'events', label: '이벤트', labelEn: 'EVENT', icon: <GiftIcon />, href: '/events' },
-  { id: 'location', label: '오시는길', labelEn: 'LOCATION', icon: <PinIcon />, href: '/location' },
-  { id: 'community', label: '커뮤니티', labelEn: 'COMMUNITY', icon: <ChatIcon />, href: '/community' },
+  { id: 'kakao', label: '카카오 상담', labelEn: 'KAKAO TALK', icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', external: true },
+  { id: 'location', label: '오시는길', labelEn: 'LOCATION', icon: <PinIcon />, href: '/community' },
 ]
 
 function useIntersection() {
@@ -88,6 +63,7 @@ export default function InfoSection() {
             href={card.href}
             className={`${styles.card} ${visible ? styles.cardVisible : ''}`}
             style={{ transitionDelay: `${0.1 + idx * 0.08}s` }}
+            {...(card.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           >
             <div className={styles.cardInner}>
               <div className={styles.iconWrap}>{card.icon}</div>
