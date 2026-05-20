@@ -1,14 +1,7 @@
 import { useRef, useEffect, useState } from 'react'
 import styles from './InfoSection.module.css'
-
-interface InfoCard {
-  id: string
-  label: string
-  labelEn: string
-  icon: React.ReactNode
-  href: string
-  external?: boolean
-}
+import { useT } from '../context/LocaleContext'
+import { useLocalePath } from '../hooks/useLocalePath'
 
 const KakaoIcon = () => (
   <svg width="36" height="36" viewBox="0 0 36 36" fill="currentColor" stroke="none">
@@ -23,11 +16,6 @@ const PinIcon = () => (
     <circle cx="18" cy="16" r="2.5" fill="currentColor" stroke="none" opacity="0.4" />
   </svg>
 )
-
-const infoCards: InfoCard[] = [
-  { id: 'kakao', label: '카카오 상담', labelEn: 'KAKAO TALK', icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', external: true },
-  { id: 'location', label: '오시는길', labelEn: 'LOCATION', icon: <PinIcon />, href: '/community' },
-]
 
 function useIntersection() {
   const ref = useRef<HTMLDivElement>(null)
@@ -45,17 +33,22 @@ function useIntersection() {
 
 export default function InfoSection() {
   const { ref, visible } = useIntersection()
+  const t = useT()
+  const localePath = useLocalePath()
+
+  const infoCards = [
+    { id: 'kakao', label: t.info.kakaoLabel, labelEn: 'KAKAO TALK', icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', external: true },
+    { id: 'location', label: t.info.locationLabel, labelEn: 'LOCATION', icon: <PinIcon />, href: localePath('/community') },
+  ]
 
   return (
     <section className={styles.section} ref={ref}>
-      {/* Header */}
       <div className={`${styles.header} ${visible ? styles.visible : ''}`}>
-        <h2 className="section-title">INFORMATION</h2>
-        <p className="section-subtitle">왕실의원 기본정보</p>
+        <h2 className="section-title">{t.info.sectionTitle}</h2>
+        <p className="section-subtitle">{t.info.sectionSubtitle}</p>
         <div className="section-divider"><div className="section-divider-dot" /></div>
       </div>
 
-      {/* Cards Grid */}
       <div className={styles.grid}>
         {infoCards.map((card, idx) => (
           <a

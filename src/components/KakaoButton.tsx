@@ -1,4 +1,5 @@
 import styles from './KakaoButton.module.css'
+import { useT } from '../context/LocaleContext'
 
 const KakaoIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -12,6 +13,8 @@ interface Props {
 }
 
 export default function KakaoButton({ size = 'md', className = '' }: Props) {
+  const t = useT()
+
   return (
     <a
       href="https://pf.kakao.com/_ySgVX"
@@ -20,7 +23,7 @@ export default function KakaoButton({ size = 'md', className = '' }: Props) {
       rel="noopener noreferrer"
     >
       <KakaoIcon />
-      카카오 상담
+      {t.footer.kakaoConsult}
     </a>
   )
 }

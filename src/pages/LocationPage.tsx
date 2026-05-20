@@ -1,26 +1,22 @@
 import { useEffect, useRef, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './LocationPage.module.css'
+import { useT } from '../context/LocaleContext'
 
 const HERO_BG = '/img/directions/banner.png'
 const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
-const infoBoxes = [
-  { label: '주소', value: '부평구 경인로 948' },
-  { label: '전화', value: '032-435-3571' },
-  { label: '지하철', value: '부평역 1번출구' },
-  { label: '도보', value: '약 5분' },
-]
-
 export default function LocationPage() {
   const [loaded, setLoaded] = useState(false)
   const mapRef = useRef<HTMLDivElement>(null)
+  const t = useT()
+  const loc = t.location
 
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 100)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   useEffect(() => {
@@ -59,9 +55,9 @@ export default function LocationPage() {
   return (
     <div className={styles.page}>
       <Helmet>
-        <title>오시는길 | 왕실의원 - 인천 부평구 경인로 948</title>
-        <meta name="description" content="왕실의원 오시는길. 인천광역시 부평구 경인로 948 유성메디컬 빌딩 2층. 지하철 1호선 부평역 1번출구 도보 5분. 032-435-3571" />
-        <link rel="canonical" href="https://wangsil.pages.dev/community" />
+        <title>{loc.meta.title}</title>
+        <meta name="description" content={loc.meta.desc} />
+        <link rel="canonical" href={loc.meta.canonical} />
       </Helmet>
 
       {/* Hero */}
@@ -72,10 +68,10 @@ export default function LocationPage() {
         </div>
         <div className={`container ${styles.heroContent} ${loaded ? styles.visible : ''}`}>
           <div className={styles.heroText}>
-            <p className={styles.heroLabel}>왕실의원 위치안내 ————</p>
-            <h1 className={styles.heroTitle}>오시는길</h1>
+            <p className={styles.heroLabel}>{loc.hero.label}</p>
+            <h1 className={styles.heroTitle}>{loc.hero.title}</h1>
             <div className={styles.heroInfoBoxes}>
-              {infoBoxes.map((box) => (
+              {loc.hero.infoBoxes.map((box) => (
                 <div key={box.label} className={styles.infoBox}>
                   <p className={styles.infoBoxLabel}>{box.label}</p>
                   <p className={styles.infoBoxValue}>{box.value}</p>
@@ -89,20 +85,20 @@ export default function LocationPage() {
       {/* 지도 */}
       <section className={styles.mapSection}>
         <div className="container">
-          <h2 className={styles.mapTitle}>오시는길</h2>
+          <h2 className={styles.mapTitle}>{loc.mapSection.title}</h2>
           <div ref={mapRef} className={styles.map} />
           <div className={styles.infoGrid}>
             <div className={styles.infoItem}>
-              <p className={styles.infoItemLabel}>주소</p>
-              <p className={styles.infoItemValue}>인천광역시 부평구 경인로 948 유성메디컬 빌딩 2층 왕실의원</p>
+              <p className={styles.infoItemLabel}>{loc.mapSection.address.label}</p>
+              <p className={styles.infoItemValue}>{loc.mapSection.address.value}</p>
             </div>
             <div className={styles.infoItem}>
-              <p className={styles.infoItemLabel}>대중교통</p>
-              <p className={styles.infoItemValue}>지하철 1호선 부평역 1번출구 도보 5분</p>
+              <p className={styles.infoItemLabel}>{loc.mapSection.transit.label}</p>
+              <p className={styles.infoItemValue}>{loc.mapSection.transit.value}</p>
             </div>
             <div className={styles.infoItem}>
-              <p className={styles.infoItemLabel}>전화</p>
-              <p className={styles.infoItemValue}>032-435-3571</p>
+              <p className={styles.infoItemLabel}>{loc.mapSection.phone.label}</p>
+              <p className={styles.infoItemValue}>{loc.mapSection.phone.value}</p>
             </div>
           </div>
         </div>

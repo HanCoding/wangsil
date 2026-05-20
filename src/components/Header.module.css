@@ -50,6 +50,42 @@
   color: var(--color-beige-dark);
 }
 
+/* Language Switcher */
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.langBtn,
+.langActive {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: color var(--transition-fast);
+}
+
+.langBtn {
+  color: var(--color-text-light);
+}
+
+.langBtn:hover {
+  color: var(--color-gold);
+}
+
+.langActive {
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.langDivider {
+  color: var(--color-beige-dark);
+  font-size: 0.68rem;
+}
+
 .kakaoBtn {
   display: flex;
   align-items: center;

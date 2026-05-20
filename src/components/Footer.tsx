@@ -1,24 +1,25 @@
 import styles from './Footer.module.css'
 import KakaoButton from './KakaoButton'
+import { useT } from '../context/LocaleContext'
 
 export default function Footer() {
+  const t = useT()
+
   return (
     <footer className={styles.footer}>
       <div className="container">
         <div className={styles.inner}>
-          {/* Left: interior image */}
           <div className={styles.imageBlock}>
-            <p className={styles.imageLabel}>병원내부</p>
+            <p className={styles.imageLabel}>{t.footer.imageLabel}</p>
             <div className={styles.clinicImage}>
               <img
                 src="https://alice4871277.aty.kr/1774005383242/image/resize_ddfd8a7c4887414ea382dc922e797f4c.png"
-                alt="왕실의원 내부"
+                alt={t.footer.imageAlt}
                 loading="lazy"
               />
             </div>
           </div>
 
-          {/* Right: contact info */}
           <div className={styles.infoBlock}>
             <div className={styles.logo}>
               <img
@@ -29,15 +30,15 @@ export default function Footer() {
             </div>
 
             <div className={styles.phone}>
-              <p className={styles.phoneLabel}>대표전화</p>
+              <p className={styles.phoneLabel}>{t.footer.phoneLabel}</p>
               <a href="tel:0324353571" className={styles.phoneNumber}>032) 435-3571</a>
               <KakaoButton size="sm" />
             </div>
 
             <div className={styles.addressBlock}>
-              <p>인천광역시 부평구 경인로 948 2층 201호 왕실의원 (유성메디칼빌딩)</p>
-              <p>상호명 : 왕실의원 대표자명 : 임한국 사업자등록번호 : 191-78-00509</p>
-              <p>COPYRIGHT(C) 2018 왕실의원. ALL RIGHT RESERVED.</p>
+              <p>{t.footer.address}</p>
+              <p>{t.footer.bizInfo}</p>
+              <p>{t.footer.copyright}</p>
             </div>
           </div>
         </div>

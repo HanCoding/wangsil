@@ -1,43 +1,28 @@
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './NosePage.module.css'
+import { useT } from '../context/LocaleContext'
 
 const HERO_BG = '/img/nose/banner.png'
 
-const infoBoxes = [
-  { label: '수술시간', value: '2시간' },
-  { label: '마취방법', value: '국소마취' },
-  { label: '회복기간', value: '2~3일' },
-  { label: '내원이부', value: '1~2회' },
-]
-
-const features = [
-  '얼굴형에 맞는 자연스러운 코 성형',
-  '짧은 수술 시간, 빠른 회복 기간',
-  '티나지 않는 자연스러움, 완벽한 옆라인',
-]
-
-const priceList = [
-  { name: '콧대', price: '1,000,000원' },
-  { name: '코골', price: '1,000,000원' },
-  { name: '코평수, 들창코교정', price: '1,000,000원' },
-  { name: '절골술', price: '2,000,000원' },
-]
-
 export default function NosePage() {
   const [loaded, setLoaded] = useState(false)
+  const t = useT()
+  const n = t.nose
+
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 100)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
     <div className={styles.page}>
       <Helmet>
-        <title>코성형 | 왕실의원 - 바비인형 코수술 전문</title>
-        <meta name="description" content="왕실의원 코성형 전문 클리닉. 바비인형 코수술, 코끝성형, 콧볼축소, 매부리코 교정. 3DCT 정밀 진단, 1:1 맞춤 상담. 인천 부평 032-435-3571" />
-        <link rel="canonical" href="https://wangsil.pages.dev/nose" />
+        <title>{n.meta.title}</title>
+        <meta name="description" content={n.meta.desc} />
+        <link rel="canonical" href={n.meta.canonical} />
       </Helmet>
+
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
@@ -46,19 +31,19 @@ export default function NosePage() {
         </div>
         <div className={`container ${styles.heroContent} ${loaded ? styles.visible : ''}`}>
           <div className={styles.heroText}>
-            <p className={styles.heroLabel}>이젠나도 연예인 코성형 ————</p>
+            <p className={styles.heroLabel}>{n.hero.label}</p>
             <h1 className={styles.heroTitle}>
-              바비인형같은 <span>오똑한콧날</span>
+              {n.hero.title1}<span>{n.hero.title2}</span>
             </h1>
             <div className={styles.heroInfoBoxes}>
-              {infoBoxes.map((box) => (
+              {n.infoBoxes.map((box) => (
                 <div key={box.label} className={styles.infoBox}>
                   <p className={styles.infoBoxLabel}>{box.label}</p>
                   <p className={styles.infoBoxValue}>{box.value}</p>
                 </div>
               ))}
             </div>
-            <p className={styles.heroCaution}>* 개인에 따라 차이가 있을 수 있습니다. 자세한 문의사항은 개별적으로 문의해주세요.</p>
+            <p className={styles.heroCaution}>{t.common.caution}</p>
           </div>
         </div>
       </section>
@@ -67,14 +52,14 @@ export default function NosePage() {
       <section className={styles.featureSection}>
         <div className="container">
           <div className={styles.sectionTag}>
-            <span className={styles.tagText}>MULTIPLE EYES SURGERY</span>
-            <p className={styles.tagSub}>PLASTIC SURGERY</p>
+            <span className={styles.tagText}>{n.featureSection.tagText}</span>
+            <p className={styles.tagSub}>{n.featureSection.tagSub}</p>
           </div>
-          <h2 className={styles.sectionTitle}>수술한 티 안나는 <strong>바비인형 코성형</strong></h2>
+          <h2 className={styles.sectionTitle}>{n.featureSection.title1}<strong>{n.featureSection.title2}</strong></h2>
           <div className={styles.featureCard}>
-            <div className={styles.featureCardHeader}>1:1 맞춤 디자인 시스템</div>
+            <div className={styles.featureCardHeader}>{n.featureSection.cardHeader}</div>
             <div className={styles.featureCardBody}>
-              {features.map((f) => (
+              {n.featureSection.features.map((f) => (
                 <p key={f} className={styles.featureItem}>
                   <span className={styles.checkIcon}>☑</span> {f}
                 </p>
@@ -88,10 +73,10 @@ export default function NosePage() {
       <section className={styles.priceSection}>
         <div className="container">
           <div className={styles.priceTableWrap}>
-            <div className={styles.priceHeader}>10% 부가세 별도</div>
+            <div className={styles.priceHeader}>{n.priceSection.vatNote}</div>
             <table className={styles.priceTable}>
               <tbody>
-                {priceList.map((item) => (
+                {n.priceSection.items.map((item) => (
                   <tr key={item.name}>
                     <td className={styles.priceName}>{item.name}</td>
                     <td className={styles.priceValue}>{item.price}</td>
@@ -108,9 +93,9 @@ export default function NosePage() {
         <div className="container">
           <div className={styles.ratioInner}>
             <div className={styles.ratioSectionHeader}>
-              <h2 className={styles.ratioTitle}>왕실의원 바비인형 코성형</h2>
+              <h2 className={styles.ratioTitle}>{n.ratioSection.title}</h2>
               <div className={styles.ratioDivider} />
-              <p className={styles.ratioQuote}>"얼굴의 중심, 콧대하나로 자신감을 세워줍니다"</p>
+              <p className={styles.ratioQuote}>{n.ratioSection.quote}</p>
               <div className={styles.ratioIcon}>
                 <svg viewBox="0 0 40 40" width="40" fill="none">
                   <circle cx="20" cy="20" r="18" stroke="#c9a96e" strokeWidth="1.5"/>
@@ -118,18 +103,30 @@ export default function NosePage() {
                 </svg>
               </div>
               <p className={styles.ratioDesc}>
-                수술 전 3DCT로 정확하고 안전한 진단을 한 후 1:1 맞춤 상담 원하는 디자인을 최대한 반영합니다.<br />
-                안심하고 믿을 수 있는 수술 ! 담당자 및 수술실 설명제를 실시하며 365일 24시간 전문 마취의가<br />
-                직접 마취하며 수술 후 에프터 케어 서비스도 운영하고 있습니다.
+                {n.ratioSection.desc.split('\n').map((line, i, arr) => (
+                  <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                ))}
               </p>
             </div>
             <div className={styles.ratioBanner}>
-              <img src="/img/nose/2.png" alt="자연스럽고 아름다운 비율" className={styles.ratioBannerImg} />
+              <img src="/img/nose/2.png" alt={n.ratioSection.bannerTitle.replace('\n', ' ')} className={styles.ratioBannerImg} />
               <div className={styles.ratioBannerOverlay}>
-                <p className={styles.ratioBannerSub}>어디서나 자신있고 우아한 옆라인</p>
-                <p className={styles.ratioBannerTitle}>자연스럽고<br />아름다운 비율</p>
-                <p className={styles.ratioBannerBullets}>완벽한 옆라인<br />자연스러운 디자인<br />입체적 페이스라인</p>
-                <p className={styles.ratioBannerSubNote}>인체공학적 조건과 비율을 고려한<br />황금비율의 라인입니다.</p>
+                <p className={styles.ratioBannerSub}>{n.ratioSection.bannerSub}</p>
+                <p className={styles.ratioBannerTitle}>
+                  {n.ratioSection.bannerTitle.split('\n').map((line, i, arr) => (
+                    <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                  ))}
+                </p>
+                <p className={styles.ratioBannerBullets}>
+                  {n.ratioSection.bannerBullets.split('\n').map((line, i, arr) => (
+                    <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                  ))}
+                </p>
+                <p className={styles.ratioBannerSubNote}>
+                  {n.ratioSection.bannerSubNote.split('\n').map((line, i, arr) => (
+                    <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                  ))}
+                </p>
               </div>
             </div>
           </div>
@@ -139,12 +136,12 @@ export default function NosePage() {
       {/* Before & After */}
       <section className={styles.beforeAfterSection}>
         <div className="container">
-          <h2 className={styles.baTitle}>Before &amp; After</h2>
-          <p className={styles.baSub}>수술전후사진</p>
+          <h2 className={styles.baTitle}>{n.beforeAfter.title}</h2>
+          <p className={styles.baSub}>{n.beforeAfter.sub}</p>
           <div className={styles.baTabs}>
-            <button className={`${styles.baTab} ${styles.baTabActive}`}>바비인형 코수술</button>
-            <button className={styles.baTab}>턱교정</button>
-            <button className={styles.baTab}>안면윤곽</button>
+            <button className={`${styles.baTab} ${styles.baTabActive}`}>{n.beforeAfter.tab1}</button>
+            <button className={styles.baTab}>{n.beforeAfter.tab2}</button>
+            <button className={styles.baTab}>{n.beforeAfter.tab3}</button>
           </div>
           <div className={styles.baGrid}>
             <div className={styles.baCaseImgWrap}>
@@ -166,7 +163,6 @@ export default function NosePage() {
           </div>
         </div>
       </section>
-
     </div>
   )
 }

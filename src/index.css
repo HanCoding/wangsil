@@ -43,6 +43,18 @@
   --shadow-strong: 0 16px 60px rgba(42, 31, 24, 0.2);
 }
 
+html[lang="ja"] {
+  --font-display: 'Noto Sans JP', sans-serif;
+  --font-korean: 'Noto Sans JP', sans-serif;
+  --font-body: 'Noto Sans JP', sans-serif;
+}
+
+html[lang="zh"] {
+  --font-display: 'Noto Sans SC', sans-serif;
+  --font-korean: 'Noto Sans SC', sans-serif;
+  --font-body: 'Noto Sans SC', sans-serif;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;

@@ -1,5 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import styles from './TreatmentSection.module.css'
+import { useT } from '../context/LocaleContext'
 
 interface Treatment {
   id: string
@@ -11,51 +12,6 @@ interface Treatment {
   points: string[]
   imageUrl: string
 }
-
-const treatments: Treatment[] = [
-  {
-    id: 'facelift',
-    label: 'PREMIUM AFTER CARE SYSTEM',
-    title: '자연스럽게, 우아하게 —',
-    titleEn: '',
-    subtitle: '시간을 되돌리다',
-    description:
-      '처진 볼살, 흐려진 턱선, 깊어진 이마 주름까지.\n안면거상·이마거상 전문 클리닉이\n당신의 가장 아름다운 모습을 되찾아 드립니다.',
-    points: [],
-    imageUrl: '/img/main/1.png',
-  },
-  {
-    id: 'facelift-detail',
-    label: 'PREMIUM AFTER CARE SYSTEM',
-    title: '안면거상',
-    titleEn: '(Face Lift)',
-    subtitle: '자연스러운 젊음 회복의 핵심',
-    description:
-      '안면거상은 단순히 피부를 당기는 것이 아닙니다.\nSMAS(표재성 근막) 층을 정교하게 다루어\n얼굴 전체의 구조적 처짐을 근본적으로 교정합니다.',
-    points: [
-      '살·팔자주름·턱선 동시 개선',
-      'SMAS 층 정밀 교정으로 자연스러운 결과',
-      '절개선을 귀 주변에 숨겨 흉터 최소화',
-    ],
-    imageUrl: '/img/main/2.png',
-  },
-  {
-    id: 'browlift',
-    label: 'PREMIUM AFTER CARE SYSTEM',
-    title: '이마거상',
-    titleEn: '(Brow Lift)',
-    subtitle: '눈매와 이마를 동시에 젊게',
-    description:
-      '이마거상은 처진 눈썹과 이마 주름을 함께 개선하여\n전체적인 인상을 밝고 생기 있게 바꿔줍니다.\n내시경 기법을 활용해 흉터를 최소화하면서도\n확실한 효과를 제공합니다.',
-    points: [
-      '이마 가로 주름 및 미간 주름 개선',
-      '처진 눈썹 교정으로 눈매 선명해짐',
-      '내시경 최소절개 방식 적용',
-      '피곤하고 무거운 인상 개선',
-    ],
-    imageUrl: '/img/main/3.png',
-  },
-]
 
 function useIntersection(threshold = 0.2) {
   const ref = useRef<HTMLDivElement>(null)
@@ -116,26 +72,24 @@ function TreatmentCard({ item, index }: { item: Treatment; index: number }) {
 
 export default function TreatmentSection() {
   const { ref: titleRef, visible: titleVisible } = useIntersection()
+  const t = useT()
 
   return (
     <section className={styles.section}>
       <div className="container">
-        {/* Section Header */}
         <div ref={titleRef} className={`${styles.sectionHeader} ${titleVisible ? styles.headerVisible : ''}`}>
-          <h2 className="section-title">안면거상 전문 시술</h2>
-          <p className="section-subtitle">왕실의원 특화 프로그램</p>
+          <h2 className="section-title">{t.treatment.sectionTitle}</h2>
+          <p className="section-subtitle">{t.treatment.sectionSubtitle}</p>
           <div className="section-divider">
             <div className="section-divider-dot" />
           </div>
         </div>
 
-        {/* Treatment Cards */}
         <div className={styles.cardGrid}>
-          {treatments.map((item, idx) => (
+          {t.treatment.items.map((item, idx) => (
             <TreatmentCard key={item.id} item={item} index={idx} />
           ))}
         </div>
-
       </div>
     </section>
   )

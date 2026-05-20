@@ -1,50 +1,26 @@
 import { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './AboutPage.module.css'
+import { useT } from '../context/LocaleContext'
 
 const HERO_BG = '/img/intro/banner.png'
 
-const safetyItems = [
-  {
-    num: '01',
-    title: '전문의가 직접하는 마취',
-    desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: '/img/intro/2.png',
-  },
-  {
-    num: '02',
-    title: '첨단의료장비 보유',
-    desc: '최첨단 의료장비와 안전한 수술 환경을 갖추어 환자의 상태를 계속 평가하고 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: '/img/intro/3.png',
-  },
-  {
-    num: '03',
-    title: '전문간호사 의료서비스',
-    desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: '/img/intro/4.png',
-  },
-  {
-    num: '04',
-    title: '수술 후 토탈케어 서비스',
-    desc: '전문 마취의가 1:1 직접 마취하여 환자의 상태를 계속 평가하여 안전하고 체계적인 시스템으로 진행됩니다.',
-    img: '/img/intro/5.png',
-  },
-]
-
 export default function AboutPage() {
   const [loaded, setLoaded] = useState(false)
+  const t = useT()
+
   useEffect(() => {
-    const t = setTimeout(() => setLoaded(true), 100)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setLoaded(true), 100)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
     <div className={styles.page}>
       <Helmet>
-        <title>병원소개 | 왕실의원 - 인천 부평 성형외과</title>
-        <meta name="description" content="왕실의원 원장 소개 및 병원 안전 시스템. 15년 경력의 전문 성형외과 의료진이 상담부터 수술, 사후관리까지 직접 담당합니다." />
-        <link rel="canonical" href="https://wangsil.pages.dev/about" />
+        <title>{t.about.meta.title}</title>
+        <meta name="description" content={t.about.meta.desc} />
       </Helmet>
+
       {/* Hero */}
       <section className={styles.hero}>
         <div className={styles.heroBg}>
@@ -53,16 +29,18 @@ export default function AboutPage() {
         </div>
         <div className={`container ${styles.heroContent} ${loaded ? styles.visible : ''}`}>
           <div className={styles.heroText}>
-            <p className={styles.heroLabel}>결과로 증명하는 의료진의 집중력</p>
+            <p className={styles.heroLabel}>{t.about.hero.label}</p>
             <h1 className={styles.heroTitle}>
-              토탈 뷰티<br />메디컬그룹
+              {t.about.hero.title.split('\n').map((line, i) => (
+                <span key={i}>{line}<br /></span>
+              ))}
             </h1>
             <div className={styles.heroDivider} />
             <div className={styles.heroQuotes}>
-              <p>"환자 안전을 최우선으로, 집도의가 끝까지 책임집니다"</p>
-              <p>1:1 전담 시스템으로 완성되는 결과</p>
-              <p>"섬세한 손끝에서 완성되는 변화"</p>
-              <p>자연스러운 아름다움을 설계합니다</p>
+              <p>{t.about.hero.quote1}</p>
+              <p>{t.about.hero.quote2}</p>
+              <p>{t.about.hero.quote3}</p>
+              <p>{t.about.hero.quote4}</p>
             </div>
           </div>
         </div>
@@ -73,28 +51,28 @@ export default function AboutPage() {
         <div className="container">
           <div className={styles.greetInner}>
             <div className={styles.greetLeft}>
-              <p className={styles.sectionEng}>PLASTIC SURGERY WANGSIL</p>
-              <h2 className={styles.greetHeadline}>의료진 병원 소개</h2>
-              <p className={styles.greetSubtitle}>
-                "최고의 기술과 진심으로 환자를 마주합니다"
-              </p>
+              <p className={styles.sectionEng}>{t.about.greet.eng}</p>
+              <h2 className={styles.greetHeadline}>{t.about.greet.headline}</h2>
+              <p className={styles.greetSubtitle}>{t.about.greet.subtitle}</p>
               <div className={styles.greetDivider} />
               <div className={styles.greetBody}>
-                <p>안녕하세요.</p>
-                <p>저희 병원을 찾아주시는 모든 분들은 단순한 외모의 변화를 넘어, 자신감과 삶의 만족도를 높이기 위한 소중한 결정을 하고 계신다고 생각합니다. 그렇기 때문에 저는 한 분 한 분의 이야기에 귀 기울이고, 각자의 개성과 아름다움을 존중하는 맞춤 진료를 가장 중요하게 여기고 있습니다.</p>
-                <p>자연스럽게 젊어지는 변화는 누구에게나 흥겨지만, 그 변화를 어떻게 받아들이고 개선하느냐는 전혀 다른 결과를 만듭니다. 저는 수많은 임상 경험을 통해 단순히 '리프팅'이 단순한 시술이 아닌, 얼굴 전체의 균형과 인상을 바꾸는 중요한 과정이라는 것을 깊이 이해하게 되었습니다.</p>
-                <p>저희 왕실의원은 안면거상, 실리프팅, 필러, 레이저 등 다양한 리프팅 시술에 집중하여 연구하고 발전 시켜 왔습니다. 단순히 처진 피부를 당기는 것이 아니라, 개개인의 얼굴 구조와 노화의 원인을 정확히 분석해 가장 적합한 방법을 제안드립니다.</p>
-                <p>또한 상담부터 시술, 회복까지 모든 과정에서 환자분이 안심하실 수 있도록 책임 있는 진료를 약속드립니다. 불필요한 시술은 권하지 않으며, 오직 환자분께 필요한 선택만을 안내드립니다.</p>
+                <p>{t.about.greet.p1}</p>
+                <p>{t.about.greet.p2}</p>
+                <p>{t.about.greet.p3}</p>
+                <p>{t.about.greet.p4}</p>
+                <p>{t.about.greet.p5}</p>
                 <p className={styles.closing}>
-                  당신의 시간을 거스르는 변화,<br />그 시간을 저희 왕실과 함께하겠습니다. 감사합니다.
+                  {t.about.greet.closing.split('\n').map((line, i, arr) => (
+                    <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+                  ))}
                 </p>
-                <p className={styles.signature}>왕실 대표원장 드림</p>
+                <p className={styles.signature}>{t.about.greet.signature}</p>
               </div>
             </div>
             <div className={styles.greetRight}>
               <div className={styles.safetyBadge}>
-                <p className={styles.badgeKor}>왕실의원 안전시스템</p>
-                <p className={styles.badgeEng}>PLASTIC SURGERY</p>
+                <p className={styles.badgeKor}>{t.about.greet.badgeKor}</p>
+                <p className={styles.badgeEng}>{t.about.greet.badgeEng}</p>
               </div>
               <img
                 src="/img/intro/1.png"
@@ -110,11 +88,13 @@ export default function AboutPage() {
       <section className={styles.safetySection}>
         <div className="container">
           <div className={styles.sectionHeader}>
-            <h2 className={styles.safetySectionTitle}>왕실의원 <strong>안전시스템</strong></h2>
-            <p className={styles.safetySectionEng}>PLASTIC SURGERY</p>
+            <h2 className={styles.safetySectionTitle}>
+              {t.about.safety.sectionTitle}<strong>{t.about.safety.sectionTitleStrong}</strong>
+            </h2>
+            <p className={styles.safetySectionEng}>{t.about.safety.sectionEng}</p>
           </div>
           <div className={styles.safetyGrid}>
-            {safetyItems.map((item) => (
+            {t.about.safety.items.map((item) => (
               <div key={item.num} className={styles.safetyCard}>
                 <div className={styles.safetyImgWrap}>
                   <img src={item.img} alt={item.title} loading="lazy" />

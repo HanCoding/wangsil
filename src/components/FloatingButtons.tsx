@@ -1,13 +1,7 @@
 import { useState } from 'react'
 import styles from './FloatingButtons.module.css'
-
-interface FloatItem {
-  id: string
-  label: string
-  icon: React.ReactNode
-  href: string
-  variant?: 'default' | 'kakao' | 'blog' | 'phone'
-}
+import { useT } from '../context/LocaleContext'
+import { useLocalePath } from '../hooks/useLocalePath'
 
 const PinIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -34,15 +28,17 @@ const BlogIcon = () => (
   </svg>
 )
 
-const floatItems: FloatItem[] = [
-  { id: 'cost', label: '비용상담', icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', variant: 'kakao' },
-  { id: 'location', label: '오시는길', icon: <PinIcon />, href: '/community' },
-  { id: 'phone', label: '전화상담예약', icon: <PhoneIcon />, href: 'tel:032-435-3571', variant: 'phone' },
-  { id: 'blog', label: '블로그', icon: <BlogIcon />, href: 'https://blog.naver.com/7878rrr', variant: 'blog' },
-]
-
 export default function FloatingButtons() {
   const [hovered, setHovered] = useState<string | null>(null)
+  const t = useT()
+  const localePath = useLocalePath()
+
+  const floatItems = [
+    { id: 'cost', label: t.float.cost, icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', variant: 'kakao' },
+    { id: 'location', label: t.float.location, icon: <PinIcon />, href: localePath('/community') },
+    { id: 'phone', label: t.float.phone, icon: <PhoneIcon />, href: 'tel:032-435-3571', variant: 'phone' },
+    { id: 'blog', label: t.float.blog, icon: <BlogIcon />, href: 'https://blog.naver.com/7878rrr', variant: 'blog' },
+  ]
 
   return (
     <div className={styles.floatContainer}>
