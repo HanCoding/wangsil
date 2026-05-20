@@ -36,7 +36,7 @@ const BlogIcon = () => (
 
 const floatItems: FloatItem[] = [
   { id: 'cost', label: '비용상담', icon: <KakaoIcon />, href: 'https://pf.kakao.com/_ySgVX', variant: 'kakao' },
-  { id: 'location', label: '오시는길', icon: <PinIcon />, href: '/location' },
+  { id: 'location', label: '오시는길', icon: <PinIcon />, href: '/community' },
   { id: 'phone', label: '전화상담예약', icon: <PhoneIcon />, href: 'tel:032-435-3571', variant: 'phone' },
   { id: 'blog', label: '블로그', icon: <BlogIcon />, href: 'https://blog.naver.com/7878rrr', variant: 'blog' },
 ]
