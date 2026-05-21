@@ -59,6 +59,8 @@ export default function Header() {
               <Link to={switchLocale('en')} className={locale === 'en' ? styles.langActive : styles.langBtn}>EN</Link>
               <span className={styles.langDivider}>|</span>
               <Link to={switchLocale('zh')} className={locale === 'zh' ? styles.langActive : styles.langBtn}>CN</Link>
+              <span className={styles.langDivider}>|</span>
+              <Link to={switchLocale('vi')} className={locale === 'vi' ? styles.langActive : styles.langBtn}>VN</Link>
             </div>
             <a href="https://pf.kakao.com/_ySgVX" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -128,6 +130,21 @@ export default function Header() {
             </li>
           ))}
         </ul>
+        <div className={styles.mobileLangSwitch}>
+          {(['ko', 'ja', 'en', 'zh', 'vi'] as const).map((lang, i, arr) => (
+            <>
+              <Link
+                key={lang}
+                to={switchLocale(lang)}
+                className={locale === lang ? styles.mobileLangActive : styles.mobileLangBtn}
+                onClick={() => setMenuOpen(false)}
+              >
+                {lang === 'ko' ? 'KO' : lang === 'ja' ? 'JP' : lang === 'en' ? 'EN' : lang === 'zh' ? 'CN' : 'VN'}
+              </Link>
+              {i < arr.length - 1 && <span className={styles.mobileLangDivider}>|</span>}
+            </>
+          ))}
+        </div>
         <div className={styles.mobileFooter}>
           <a href="tel:0324353571">{t.header.phone}</a>
         </div>

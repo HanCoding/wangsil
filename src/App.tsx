@@ -61,6 +61,9 @@ export default function App() {
           <Route path="/zh" element={<LocaleLayout locale="zh" />}>
             {subRoutes}
           </Route>
+          <Route path="/vi" element={<LocaleLayout locale="vi" />}>
+            {subRoutes}
+          </Route>
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

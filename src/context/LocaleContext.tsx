@@ -3,12 +3,13 @@ import ko from '../locales/ko'
 import ja from '../locales/ja'
 import en from '../locales/en'
 import zh from '../locales/zh'
+import vi from '../locales/vi'
 import type { Translations } from '../locales/ko'
 import type { ReactNode } from 'react'
 
-export type Locale = 'ko' | 'ja' | 'en' | 'zh'
+export type Locale = 'ko' | 'ja' | 'en' | 'zh' | 'vi'
 
-const resources: Record<Locale, Translations> = { ko, ja, en, zh }
+const resources: Record<Locale, Translations> = { ko, ja, en, zh, vi }
 
 type LocaleContextType = { locale: Locale; t: Translations }
 

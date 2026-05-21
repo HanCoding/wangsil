@@ -13,6 +13,7 @@ export function getLocaleFromPath(pathname: string): Locale {
   if (pathname === '/ja' || pathname.startsWith('/ja/')) return 'ja'
   if (pathname === '/en' || pathname.startsWith('/en/')) return 'en'
   if (pathname === '/zh' || pathname.startsWith('/zh/')) return 'zh'
+  if (pathname === '/vi' || pathname.startsWith('/vi/')) return 'vi'
   return 'ko'
 }
 
