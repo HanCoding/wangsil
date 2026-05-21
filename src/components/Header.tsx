@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import styles from './Header.module.css'
 import { useT, useLocale } from '../context/LocaleContext'
 import { stripLocalePrefix } from '../hooks/useLocalePath'
+import { LOCALE_KEY } from './LocaleAutoRedirect'
 import type { Locale } from '../context/LocaleContext'
 
 export default function Header() {
@@ -27,6 +28,7 @@ export default function Header() {
     locale === 'ko' ? path : `/${locale}${path === '/' ? '' : path}`
 
   const switchLocale = (targetLocale: Locale) => {
+    localStorage.setItem(LOCALE_KEY, targetLocale)
     const currentPath = stripLocalePrefix(location.pathname, locale)
     if (targetLocale === 'ko') return currentPath
     return `/${targetLocale}${currentPath === '/' ? '' : currentPath}`
@@ -141,7 +143,7 @@ export default function Header() {
               >
                 {lang === 'ko' ? 'KO' : lang === 'ja' ? 'JP' : lang === 'en' ? 'EN' : lang === 'zh' ? 'CN' : 'VN'}
               </Link>
-              {i < arr.length - 1 && <span className={styles.mobileLangDivider}>|</span>}
+              {i < arr.length - 1 && <span key={`div-${lang}`} className={styles.mobileLangDivider}>|</span>}
             </>
           ))}
         </div>

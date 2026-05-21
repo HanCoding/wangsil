@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import LocaleLayout from './components/LocaleLayout'
+import LocaleAutoRedirect from './components/LocaleAutoRedirect'
 import Hero from './components/Hero'
 import TreatmentSection from './components/TreatmentSection'
 import InfoSection from './components/InfoSection'
@@ -43,6 +44,7 @@ export default function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <LocaleAutoRedirect />
         <Helmet>
           <title>왕실의원 | 인천 성형외과 - 눈성형·코성형·안면거상 전문</title>
           <meta name="description" content="인천 부평 왕실의원. 15년 경력 원장이 상담부터 수술까지 직접 담당. 쌍커풀·눈매교정·코성형·안면거상·이마거상. 032-435-3571" />
