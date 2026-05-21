@@ -28,10 +28,13 @@ export default function Header() {
     locale === 'ko' ? path : `/${locale}${path === '/' ? '' : path}`
 
   const switchLocale = (targetLocale: Locale) => {
-    localStorage.setItem(LOCALE_KEY, targetLocale)
     const currentPath = stripLocalePrefix(location.pathname, locale)
     if (targetLocale === 'ko') return currentPath
     return `/${targetLocale}${currentPath === '/' ? '' : currentPath}`
+  }
+
+  const saveLocale = (targetLocale: Locale) => {
+    localStorage.setItem(LOCALE_KEY, targetLocale)
   }
 
   const currentBasePath = stripLocalePrefix(location.pathname, locale)
@@ -54,15 +57,15 @@ export default function Header() {
         <div className="container">
           <div className={styles.topBarInner}>
             <div className={styles.langSwitch}>
-              <Link to={switchLocale('ko')} className={locale === 'ko' ? styles.langActive : styles.langBtn}>KO</Link>
+              <Link to={switchLocale('ko')} onClick={() => saveLocale('ko')} className={locale === 'ko' ? styles.langActive : styles.langBtn}>KO</Link>
               <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('ja')} className={locale === 'ja' ? styles.langActive : styles.langBtn}>JP</Link>
+              <Link to={switchLocale('ja')} onClick={() => saveLocale('ja')} className={locale === 'ja' ? styles.langActive : styles.langBtn}>JP</Link>
               <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('en')} className={locale === 'en' ? styles.langActive : styles.langBtn}>EN</Link>
+              <Link to={switchLocale('en')} onClick={() => saveLocale('en')} className={locale === 'en' ? styles.langActive : styles.langBtn}>EN</Link>
               <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('zh')} className={locale === 'zh' ? styles.langActive : styles.langBtn}>CN</Link>
+              <Link to={switchLocale('zh')} onClick={() => saveLocale('zh')} className={locale === 'zh' ? styles.langActive : styles.langBtn}>CN</Link>
               <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('vi')} className={locale === 'vi' ? styles.langActive : styles.langBtn}>VN</Link>
+              <Link to={switchLocale('vi')} onClick={() => saveLocale('vi')} className={locale === 'vi' ? styles.langActive : styles.langBtn}>VN</Link>
             </div>
             <a href="https://pf.kakao.com/_ySgVX" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -139,7 +142,7 @@ export default function Header() {
                 key={lang}
                 to={switchLocale(lang)}
                 className={locale === lang ? styles.mobileLangActive : styles.mobileLangBtn}
-                onClick={() => setMenuOpen(false)}
+                onClick={() => { saveLocale(lang); setMenuOpen(false) }}
               >
                 {lang === 'ko' ? 'KO' : lang === 'ja' ? 'JP' : lang === 'en' ? 'EN' : lang === 'zh' ? 'CN' : 'VN'}
               </Link>
