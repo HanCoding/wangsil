@@ -189,11 +189,13 @@
   position: relative;
   border-radius: 8px;
   overflow: hidden;
+  aspect-ratio: 3/4;
+  width: 100%;
 }
 
 .greetImg {
   width: 100%;
-  aspect-ratio: 3/4;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
   display: block;
