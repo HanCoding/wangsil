@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import TreatmentSection from './components/TreatmentSection'
 import InfoSection from './components/InfoSection'
 import RealSelfie from './components/RealSelfie'
+import EventPopup from './components/EventPopup'
 import AboutPage from './pages/AboutPage'
 import EyePage from './pages/EyePage'
 import NosePage from './pages/NosePage'
@@ -18,6 +19,7 @@ import './App.css'
 function HomePage() {
   return (
     <>
+      <EventPopup />
       <Hero />
       <TreatmentSection />
       <InfoSection />

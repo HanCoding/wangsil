@@ -75,8 +75,8 @@ export default function AboutPage() {
                 <p className={styles.badgeEng}>{t.about.greet.badgeEng}</p>
               </div>
               <img
-                src="/img/intro/1.png"
-                alt="의료진과 환자 상담"
+                src="/img/profile/profile.png"
+                alt="왕실의원 원장"
                 className={styles.greetImg}
               />
             </div>

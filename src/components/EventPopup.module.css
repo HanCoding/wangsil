@@ -1,0 +1,116 @@
+/* EventPopup.module.css */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.popup {
+  background: #fff;
+  width: 100%;
+  max-width: 460px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  animation: popupIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  background: #fff;
+  border-top: 1px solid #f0ece4;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: #6b5e52;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #c9a96e;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.closeBtn {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #2a1f18;
+  background: none;
+  border: 1px solid #d4c9b8;
+  border-radius: 4px;
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.closeBtn:hover {
+  background: #2a1f18;
+  color: #fff;
+  border-color: #2a1f18;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .popup {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    animation: popupInMobile 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes popupInMobile {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .footer {
+    padding: 14px 20px;
+    padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+}

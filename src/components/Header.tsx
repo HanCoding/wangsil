@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import styles from './Header.module.css'
 import { useT, useLocale } from '../context/LocaleContext'
@@ -6,9 +6,20 @@ import { stripLocalePrefix } from '../hooks/useLocalePath'
 import { LOCALE_KEY } from './LocaleAutoRedirect'
 import type { Locale } from '../context/LocaleContext'
 
+const langLabels: Record<string, string> = {
+  ko: '한국어',
+  ja: 'JP',
+  en: 'ENG',
+  zh: '简体中文',
+  vi: 'VIE',
+}
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
+  const langRefDesktop = useRef<HTMLDivElement>(null)
+  const langRefMobile = useRef<HTMLDivElement>(null)
   const location = useLocation()
   const t = useT()
   const locale = useLocale()
@@ -46,6 +57,18 @@ export default function Header() {
   }, [])
 
   useEffect(() => {
+    if (!langOpen) return
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as Node
+      if (!langRefDesktop.current?.contains(target) && !langRefMobile.current?.contains(target)) {
+        setLangOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [langOpen])
+
+  useEffect(() => {
     setMenuOpen(false)
     window.scrollTo(0, 0)
   }, [location.pathname])
@@ -56,16 +79,34 @@ export default function Header() {
       <div className={styles.topBar}>
         <div className="container">
           <div className={styles.topBarInner}>
-            <div className={styles.langSwitch}>
-              <Link to={switchLocale('ko')} onClick={() => saveLocale('ko')} className={locale === 'ko' ? styles.langActive : styles.langBtn}>KO</Link>
-              <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('ja')} onClick={() => saveLocale('ja')} className={locale === 'ja' ? styles.langActive : styles.langBtn}>JP</Link>
-              <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('en')} onClick={() => saveLocale('en')} className={locale === 'en' ? styles.langActive : styles.langBtn}>EN</Link>
-              <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('zh')} onClick={() => saveLocale('zh')} className={locale === 'zh' ? styles.langActive : styles.langBtn}>CN</Link>
-              <span className={styles.langDivider}>|</span>
-              <Link to={switchLocale('vi')} onClick={() => saveLocale('vi')} className={locale === 'vi' ? styles.langActive : styles.langBtn}>VN</Link>
+            <div className={`${styles.langDropdown} ${styles.desktopLangDropdown}`} ref={langRefDesktop}>
+              <button
+                className={styles.langDropdownTrigger}
+                onClick={() => setLangOpen(!langOpen)}
+                aria-expanded={langOpen}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                {langLabels[locale]}
+                <span className={`${styles.langArrow} ${langOpen ? styles.langArrowOpen : ''}`}>▾</span>
+              </button>
+              {langOpen && (
+                <div className={styles.langDropdownMenu}>
+                  {(['ko', 'ja', 'en', 'zh', 'vi'] as const).map((lang) => (
+                    <Link
+                      key={lang}
+                      to={switchLocale(lang)}
+                      className={`${styles.langDropdownItem} ${locale === lang ? styles.langDropdownItemActive : ''}`}
+                      onClick={() => { saveLocale(lang); setLangOpen(false) }}
+                    >
+                      {langLabels[lang]}
+                    </Link>
+                  ))}
+                </div>
+              )}
             </div>
             <a href="https://pf.kakao.com/_ySgVX" className={styles.kakaoBtn} target="_blank" rel="noopener noreferrer">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -110,6 +151,37 @@ export default function Header() {
               })}
             </ul>
 
+            {/* Mobile Language Dropdown */}
+            <div className={`${styles.langDropdown} ${styles.mobileLangDropdown}`} ref={langRefMobile}>
+              <button
+                className={styles.langDropdownTrigger}
+                onClick={() => setLangOpen(!langOpen)}
+                aria-expanded={langOpen}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <line x1="2" y1="12" x2="22" y2="12"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+                {langLabels[locale]}
+                <span className={`${styles.langArrow} ${langOpen ? styles.langArrowOpen : ''}`}>▾</span>
+              </button>
+              {langOpen && (
+                <div className={styles.langDropdownMenu}>
+                  {(['ko', 'ja', 'en', 'zh', 'vi'] as const).map((lang) => (
+                    <Link
+                      key={lang}
+                      to={switchLocale(lang)}
+                      className={`${styles.langDropdownItem} ${locale === lang ? styles.langDropdownItemActive : ''}`}
+                      onClick={() => { saveLocale(lang); setLangOpen(false) }}
+                    >
+                      {langLabels[lang]}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Mobile Hamburger */}
             <button
               className={`${styles.hamburger} ${menuOpen ? styles.open : ''}`}
@@ -135,21 +207,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className={styles.mobileLangSwitch}>
-          {(['ko', 'ja', 'en', 'zh', 'vi'] as const).map((lang, i, arr) => (
-            <>
-              <Link
-                key={lang}
-                to={switchLocale(lang)}
-                className={locale === lang ? styles.mobileLangActive : styles.mobileLangBtn}
-                onClick={() => { saveLocale(lang); setMenuOpen(false) }}
-              >
-                {lang === 'ko' ? 'KO' : lang === 'ja' ? 'JP' : lang === 'en' ? 'EN' : lang === 'zh' ? 'CN' : 'VN'}
-              </Link>
-              {i < arr.length - 1 && <span key={`div-${lang}`} className={styles.mobileLangDivider}>|</span>}
-            </>
-          ))}
-        </div>
+
         <div className={styles.mobileFooter}>
           <a href="tel:0324353571">{t.header.phone}</a>
         </div>

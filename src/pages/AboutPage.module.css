@@ -94,7 +94,7 @@
 
 .greetInner {
   display: grid;
-  grid-template-columns: 1fr 340px;
+  grid-template-columns: 1fr 400px;
   gap: 60px;
   align-items: start;
 }
@@ -187,9 +187,11 @@
 
 .greetImg {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 3/4;
   object-fit: cover;
+  object-position: center top;
   display: block;
+  border-radius: 8px;
 }
 
 /* ── 안전시스템 ── */
@@ -237,6 +239,7 @@
   width: 100%;
   aspect-ratio: 4/3;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .safetyImgWrap img {
