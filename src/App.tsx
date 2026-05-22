@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import TreatmentSection from './components/TreatmentSection'
 import InfoSection from './components/InfoSection'
 import RealSelfie from './components/RealSelfie'
+import ReviewSection from './components/ReviewSection'
 import EventPopup from './components/EventPopup'
 import AboutPage from './pages/AboutPage'
 import EyePage from './pages/EyePage'
@@ -24,6 +25,7 @@ function HomePage() {
       <TreatmentSection />
       <InfoSection />
       <RealSelfie />
+      <ReviewSection />
     </>
   )
 }
