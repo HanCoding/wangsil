@@ -86,6 +86,18 @@ const en: Translations = {
     note: '*Posted with the patient\'s consent.',
     imageAlt: 'Patient review',
   },
+  review: {
+    label: 'REAL REVIEW',
+    headline: 'Honest Reviews &\nHigh Satisfaction',
+    sub: 'Read genuine stories from patients\nwho visited us on Naver.',
+    naverBtn: 'View Naver Reviews',
+    reviews: [
+      { name: 'sop***215', tag: 'Booked · Wait under 10 min', text: 'I tried laser lifting at other clinics multiple times with no results, so I finally went with a face lift. The lifting power is amazing and my jawline feels like it\'s back in my 20s lol' },
+      { name: 'shfn****', tag: 'Booked · Wait under 10 min', text: 'They make it look so effortless, and the results are absolutely amazing..' },
+      { name: '잔잔**', tag: 'Walk-in · No wait', text: 'I got a chin filler and my jawline looks so much slimmer! They shaped my chin tip so naturally, my face looks slim and pretty ㅜㅜ The doctor\'s touch is excellent!' },
+      { name: 'gus****', tag: 'Walk-in · Wait under 10 min', text: 'I came with a friend after seeing their before & after and this place is genuinely incredible.. I almost ran away when I saw it from outside lol but after meeting the doctor I was totally convinced.. Affordable and truly skilled.' },
+    ],
+  },
   footer: {
     imageLabel: 'Clinic Interior',
     imageAlt: 'Wangsil Clinic Interior',

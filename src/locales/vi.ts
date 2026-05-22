@@ -86,6 +86,18 @@ const vi: Translations = {
     note: '*Đăng với sự đồng ý của bệnh nhân.',
     imageAlt: 'Đánh giá bệnh nhân',
   },
+  review: {
+    label: 'REAL REVIEW',
+    headline: 'Đánh Giá Thực Tế &\nSự Hài Lòng Cao',
+    sub: 'Đọc những chia sẻ thực tế từ khách hàng\nđã ghé thăm chúng tôi trên Naver.',
+    naverBtn: 'Xem đánh giá trên Naver',
+    reviews: [
+      { name: 'sop***215', tag: 'Đặt lịch · Chờ dưới 10 phút', text: 'Tôi đã thử nâng cơ bằng laser ở nhiều nơi nhưng không hiệu quả, cuối cùng quyết định căng da mặt. Lực nâng rất tốt, da chảy xệ được cải thiện rõ rệt, đường hàm trông như hồi 20 tuổi kkk' },
+      { name: 'shfn****', tag: 'Đặt lịch · Chờ dưới 10 phút', text: 'Bác sĩ làm trông rất nhẹ nhàng mà kết quả thì cực kỳ hài lòng..' },
+      { name: '잔잔**', tag: 'Không đặt lịch · Vào ngay', text: 'Tiêm filler cằm xong đường hàm trông thon gọn hẳn! Bác sĩ tạo hình đầu cằm rất tự nhiên, mặt trông gọn và xinh hơn nhiều ㅜㅜ Tay nghề bác sĩ tuyệt vời!' },
+      { name: 'gus****', tag: 'Không đặt lịch · Chờ dưới 10 phút', text: 'Thấy ảnh trước sau của bạn mà choáng, kéo nhau đến luôn, đây thực sự là nơi tuyệt vời. Nhìn từ ngoài vào suýt bỏ chạy nhưng gặp bác sĩ rồi thì tin tưởng ngay. Giá hợp lý mà tay nghề thực sự rất giỏi.' },
+    ],
+  },
   footer: {
     imageLabel: 'Nội thất phòng khám',
     imageAlt: 'Nội thất Phòng khám Wangsil',

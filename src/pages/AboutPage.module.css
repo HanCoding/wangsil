@@ -167,6 +167,7 @@
   background: var(--color-dark);
   padding: 18px 24px;
   text-align: center;
+  border-radius: 8px;
 }
 
 .badgeKor {
