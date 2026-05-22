@@ -24,9 +24,9 @@
   --color-kakao-dark: #f0d800;
 
   /* Typography */
-  --font-display: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
-  --font-korean: 'Noto Serif KR', 'Noto Sans KR', sans-serif;
-  --font-body: 'Noto Sans KR', sans-serif;
+  --font-display: 'Cormorant Garamond', 'Gowun Batang', Georgia, serif;
+  --font-korean: 'Gowun Batang', serif;
+  --font-body: 'Pretendard', sans-serif;
 
   /* Spacing */
   --section-padding: clamp(60px, 8vw, 120px);
@@ -44,15 +44,27 @@
 }
 
 html[lang="ja"] {
-  --font-display: 'Noto Sans JP', sans-serif;
-  --font-korean: 'Noto Sans JP', sans-serif;
+  --font-display: 'Cormorant Garamond', 'Shippori Mincho', serif;
+  --font-korean: 'Shippori Mincho', serif;
   --font-body: 'Noto Sans JP', sans-serif;
 }
 
+html[lang="en"] {
+  --font-display: 'Cormorant Garamond', 'Playfair Display', serif;
+  --font-korean: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
 html[lang="zh"] {
-  --font-display: 'Noto Sans SC', sans-serif;
-  --font-korean: 'Noto Sans SC', sans-serif;
+  --font-display: 'Cormorant Garamond', 'Noto Serif SC', serif;
+  --font-korean: 'Noto Serif SC', serif;
   --font-body: 'Noto Sans SC', sans-serif;
+}
+
+html[lang="vi"] {
+  --font-display: 'Cormorant Garamond', 'Be Vietnam Pro', sans-serif;
+  --font-korean: 'Be Vietnam Pro', sans-serif;
+  --font-body: 'Be Vietnam Pro', sans-serif;
 }
 
 *, *::before, *::after {
