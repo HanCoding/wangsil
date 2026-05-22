@@ -128,6 +128,8 @@ const en: Translations = {
       p5: 'We also promise responsible care throughout the entire process — from consultation and treatment to recovery — so that our patients can feel at ease every step of the way. We do not recommend unnecessary procedures, and we guide each patient only toward the choices they truly need.',
       closing: 'Change that turns back your time —\nwe will share that journey with you at Wangsil. Thank you.',
       signature: 'Chief Surgeon, Wangsil Clinic',
+      doctorCareer: '18 Years of Experience · Chief Surgeon',
+      doctorName: 'Dr. Lim Heon-gak',
       badgeKor: 'Wangsil Clinic Safety System',
       badgeEng: 'PLASTIC SURGERY',
     },

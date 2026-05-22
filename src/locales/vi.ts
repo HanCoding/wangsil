@@ -128,6 +128,8 @@ const vi: Translations = {
       p5: 'Chúng tôi cũng cam kết chăm sóc có trách nhiệm trong toàn bộ quá trình — từ tư vấn, điều trị đến phục hồi — để bệnh nhân có thể cảm thấy an tâm ở mỗi bước. Chúng tôi không khuyến nghị các thủ thuật không cần thiết và chỉ hướng dẫn mỗi bệnh nhân đến những lựa chọn họ thực sự cần.',
       closing: 'Sự thay đổi giúp quay ngược thời gian —\nchúng tôi sẽ cùng bạn chia sẻ hành trình đó tại Wangsil. Cảm ơn bạn.',
       signature: 'Bác sĩ trưởng, Phòng khám Wangsil',
+      doctorCareer: '18 Năm Kinh Nghiệm · Bác Sĩ Trưởng',
+      doctorName: 'BS. Lim Heon-gak',
       badgeKor: 'Hệ thống an toàn Phòng khám Wangsil',
       badgeEng: 'PLASTIC SURGERY',
     },

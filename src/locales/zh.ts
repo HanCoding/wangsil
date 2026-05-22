@@ -128,6 +128,8 @@ const zh: Translations = {
       p5: '我们承诺在从咨询到手术、恢复的整个过程中提供负责任的诊疗，让患者放心。我们不推荐不必要的手术，只为患者提供真正需要的选择。',
       closing: '让时光倒流的改变，\n愿与您共同在王室经历这段时光。感谢您。',
       signature: '王室医院 院长 敬上',
+      doctorCareer: '18年经验 主任医师 负责诊疗',
+      doctorName: '林宪珏 主任医师',
       badgeKor: '王室医院安全系统',
       badgeEng: 'PLASTIC SURGERY',
     },

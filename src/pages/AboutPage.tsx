@@ -74,11 +74,17 @@ export default function AboutPage() {
                 <p className={styles.badgeKor}>{t.about.greet.badgeKor}</p>
                 <p className={styles.badgeEng}>{t.about.greet.badgeEng}</p>
               </div>
-              <img
-                src="/img/profile/profile.png"
-                alt="왕실의원 원장"
-                className={styles.greetImg}
-              />
+              <div className={styles.greetImgWrap}>
+                <img
+                  src="/img/profile/profile_main.png"
+                  alt="왕실의원 원장"
+                  className={styles.greetImg}
+                />
+                <div className={styles.doctorOverlay}>
+                  <p className={styles.doctorCareer}>{t.about.greet.doctorCareer}</p>
+                  <p className={styles.doctorName}>{t.about.greet.doctorName}</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
