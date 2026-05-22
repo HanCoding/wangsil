@@ -30,11 +30,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e8f4f8;
+  background: var(--color-beige);
   padding: 48px 24px;
   text-align: center;
   overflow: hidden;
-  border-right: 1px solid #c8dfe8;
+  border-right: 1px solid var(--color-beige-dark);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease, background 0.3s ease;
@@ -50,7 +50,7 @@
 }
 
 .card:hover {
-  background: #d0eaf4;
+  background: var(--color-beige-dark);
 }
 
 .cardInner {
