@@ -1,18 +1,28 @@
 import { useEffect, useRef, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './LocationPage.module.css'
-import { useT } from '../context/LocaleContext'
+import { useT, useLocale } from '../context/LocaleContext'
 
 const HERO_BG = '/img/directions/banner.png'
 const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
+// 스크립트 language 파라미터 처리 방식과 동일하게 소문자 변환
+const NAVER_USER_LANG: Record<string, string | undefined> = {
+  ko: undefined,
+  en: 'en',
+  ja: 'ja',
+  zh: 'zh-hans',
+  vi: 'en',
+}
+
 export default function LocationPage() {
   const [loaded, setLoaded] = useState(false)
   const mapRef = useRef<HTMLDivElement>(null)
   const t = useT()
   const loc = t.location
+  const locale = useLocale()
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 100)
@@ -26,6 +36,15 @@ export default function LocationPage() {
       if (cancelled || !mapRef.current) return
       const naver = (window as any).naver
       if (!naver?.maps) return
+
+      // 지도 생성 전에 언어 설정 주입
+      const userLang = NAVER_USER_LANG[locale]
+      if (userLang) {
+        naver.maps.USER_LANGUAGE = userLang
+      } else {
+        delete naver.maps.USER_LANGUAGE
+      }
+
       mapRef.current.innerHTML = ''
       const center = new naver.maps.LatLng(LAT, LNG)
       const map = new naver.maps.Map(mapRef.current, {
@@ -45,7 +64,6 @@ export default function LocationPage() {
 
     const existing = document.querySelector('script[data-naver-map]') as HTMLScriptElement | null
     if (existing) {
-      // 스크립트 재사용 — naver.maps 준비 여부에 따라 분기
       if ((window as any).naver?.maps) {
         initMap()
       } else {
