@@ -8,12 +8,13 @@ const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
-// 스크립트 language 파라미터 처리 방식과 동일하게 소문자 변환
+// 스크립트 내부 Language 열거형과 일치하는 코드 사용
+// X = {KOREAN:"ko", ENGLISH:"en", CHINESE:"zh", JAPANESE:"ja"}
 const NAVER_USER_LANG: Record<string, string | undefined> = {
   ko: undefined,
   en: 'en',
   ja: 'ja',
-  zh: 'zh-hans',
+  zh: 'zh',
   vi: 'en',
 }
 
