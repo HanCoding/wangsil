@@ -1,28 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './LocationPage.module.css'
-import { useT, useLocale } from '../context/LocaleContext'
+import { useT } from '../context/LocaleContext'
 
 const HERO_BG = '/img/directions/banner.png'
 const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
-const NAVER_LANG_MAP: Record<string, string> = {
-  ko: 'ko',
-  en: 'en',
-  ja: 'ja',
-  zh: 'zh-Hans',
-  vi: 'en',
-}
-
 export default function LocationPage() {
   const [loaded, setLoaded] = useState(false)
   const mapRef = useRef<HTMLDivElement>(null)
   const t = useT()
   const loc = t.location
-  const locale = useLocale()
-  const naverLang = NAVER_LANG_MAP[locale] ?? 'ko'
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 100)
@@ -55,29 +45,24 @@ export default function LocationPage() {
 
     const existing = document.querySelector('script[data-naver-map]') as HTMLScriptElement | null
     if (existing) {
-      if (existing.dataset.naverLang === naverLang) {
-        if ((window as any).naver?.maps) {
-          initMap()
-        } else {
-          // 스크립트가 아직 로딩 중 → onload를 현재 클로저로 교체
-          existing.onload = initMap
-        }
-        return () => { cancelled = true }
+      // 스크립트 재사용 — naver.maps 준비 여부에 따라 분기
+      if ((window as any).naver?.maps) {
+        initMap()
+      } else {
+        existing.onload = initMap
       }
-      existing.remove()
-      ;(window as any).naver = undefined
+      return () => { cancelled = true }
     }
 
     const script = document.createElement('script')
-    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}&language=${naverLang}`
+    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}`
     script.async = true
     script.dataset.naverMap = 'true'
-    script.dataset.naverLang = naverLang
     script.onload = initMap
     document.head.appendChild(script)
 
     return () => { cancelled = true }
-  }, [naverLang])
+  }, [])
 
   return (
     <div className={styles.page}>
