@@ -30,10 +30,13 @@ export default function LocationPage() {
   }, [])
 
   useEffect(() => {
+    let cancelled = false
+
     function initMap() {
-      if (!mapRef.current) return
+      if (cancelled || !mapRef.current) return
       const naver = (window as any).naver
       if (!naver?.maps) return
+      mapRef.current.innerHTML = ''
       const center = new naver.maps.LatLng(LAT, LNG)
       const map = new naver.maps.Map(mapRef.current, {
         center,
@@ -53,11 +56,16 @@ export default function LocationPage() {
     const existing = document.querySelector('script[data-naver-map]') as HTMLScriptElement | null
     if (existing) {
       if (existing.dataset.naverLang === naverLang) {
-        initMap()
-        return
+        if ((window as any).naver?.maps) {
+          initMap()
+        } else {
+          // 스크립트가 아직 로딩 중 → onload를 현재 클로저로 교체
+          existing.onload = initMap
+        }
+        return () => { cancelled = true }
       }
       existing.remove()
-      delete (window as any).naver
+      ;(window as any).naver = undefined
     }
 
     const script = document.createElement('script')
@@ -67,6 +75,8 @@ export default function LocationPage() {
     script.dataset.naverLang = naverLang
     script.onload = initMap
     document.head.appendChild(script)
+
+    return () => { cancelled = true }
   }, [naverLang])
 
   return (
