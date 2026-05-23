@@ -8,10 +8,10 @@ const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
-// 스크립트 내부 Language 열거형과 일치하는 코드 사용
-// X = {KOREAN:"ko", ENGLISH:"en", CHINESE:"zh", JAPANESE:"ja"}
-const NAVER_USER_LANG: Record<string, string | undefined> = {
-  ko: undefined,
+// 스크립트 내부 Language 열거형 X = {KOREAN:"ko",ENGLISH:"en",CHINESE:"zh",JAPANESE:"ja"}
+// 이 값들이 convertToUserLanguage에서 타일 URL 교체에 사용됨
+const NAVER_LANG: Record<string, string> = {
+  ko: 'ko',
   en: 'en',
   ja: 'ja',
   zh: 'zh',
@@ -24,6 +24,7 @@ export default function LocationPage() {
   const t = useT()
   const loc = t.location
   const locale = useLocale()
+  const naverLang = NAVER_LANG[locale] ?? 'ko'
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 100)
@@ -37,15 +38,6 @@ export default function LocationPage() {
       if (cancelled || !mapRef.current) return
       const naver = (window as any).naver
       if (!naver?.maps) return
-
-      // 지도 생성 전에 언어 설정 주입
-      const userLang = NAVER_USER_LANG[locale]
-      if (userLang) {
-        naver.maps.USER_LANGUAGE = userLang
-      } else {
-        delete naver.maps.USER_LANGUAGE
-      }
-
       mapRef.current.innerHTML = ''
       const center = new naver.maps.LatLng(LAT, LNG)
       const map = new naver.maps.Map(mapRef.current, {
@@ -65,23 +57,30 @@ export default function LocationPage() {
 
     const existing = document.querySelector('script[data-naver-map]') as HTMLScriptElement | null
     if (existing) {
-      if ((window as any).naver?.maps) {
-        initMap()
-      } else {
-        existing.onload = initMap
+      if (existing.dataset.naverLang === naverLang) {
+        // 같은 언어 — 스크립트 재사용
+        if ((window as any).naver?.maps) {
+          initMap()
+        } else {
+          existing.onload = initMap
+        }
+        return () => { cancelled = true }
       }
-      return () => { cancelled = true }
+      // 언어가 다름 — 기존 스크립트만 제거 (window.naver는 유지해 충돌 방지)
+      existing.remove()
     }
 
+    // 새 언어 스크립트 로드 → window.naver.maps를 덮어써서 맵 타입 재초기화
     const script = document.createElement('script')
-    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}`
+    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}&language=${naverLang}`
     script.async = true
     script.dataset.naverMap = 'true'
+    script.dataset.naverLang = naverLang
     script.onload = initMap
     document.head.appendChild(script)
 
     return () => { cancelled = true }
-  }, [])
+  }, [naverLang])
 
   return (
     <div className={styles.page}>
