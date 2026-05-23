@@ -66,8 +66,9 @@ export default function LocationPage() {
         }
         return () => { cancelled = true }
       }
-      // 언어가 다름 — 기존 스크립트만 제거 (window.naver는 유지해 충돌 방지)
+      // 언어가 다름 — 스크립트 제거 + naver 초기화로 맵 타입 캐시 완전히 비움
       existing.remove()
+      delete (window as any).naver
     }
 
     // 새 언어 스크립트 로드 → window.naver.maps를 덮어써서 맵 타입 재초기화
