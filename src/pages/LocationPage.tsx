@@ -1,18 +1,28 @@
 import { useEffect, useRef, useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import styles from './LocationPage.module.css'
-import { useT } from '../context/LocaleContext'
+import { useT, useLocale } from '../context/LocaleContext'
 
 const HERO_BG = '/img/directions/banner.png'
 const NAVER_CLIENT_ID = 'h2dyoh2sb5'
 const LAT = 37.4897
 const LNG = 126.7227
 
+const NAVER_LANG_MAP: Record<string, string> = {
+  ko: 'ko',
+  en: 'en',
+  ja: 'ja',
+  zh: 'zh-Hans',
+  vi: 'en',
+}
+
 export default function LocationPage() {
   const [loaded, setLoaded] = useState(false)
   const mapRef = useRef<HTMLDivElement>(null)
   const t = useT()
   const loc = t.location
+  const locale = useLocale()
+  const naverLang = NAVER_LANG_MAP[locale] ?? 'ko'
 
   useEffect(() => {
     const timer = setTimeout(() => setLoaded(true), 100)
@@ -20,37 +30,44 @@ export default function LocationPage() {
   }, [])
 
   useEffect(() => {
-    if (document.querySelector('script[data-naver-map]')) {
-      initMap()
-      return
+    function initMap() {
+      if (!mapRef.current) return
+      const naver = (window as any).naver
+      if (!naver?.maps) return
+      const center = new naver.maps.LatLng(LAT, LNG)
+      const map = new naver.maps.Map(mapRef.current, {
+        center,
+        zoom: 17,
+        mapTypeControl: false,
+        scaleControl: false,
+        logoControl: true,
+        mapDataControl: false,
+      })
+      new naver.maps.Marker({
+        position: center,
+        map,
+        title: '왕실의원',
+      })
     }
+
+    const existing = document.querySelector('script[data-naver-map]') as HTMLScriptElement | null
+    if (existing) {
+      if (existing.dataset.naverLang === naverLang) {
+        initMap()
+        return
+      }
+      existing.remove()
+      delete (window as any).naver
+    }
+
     const script = document.createElement('script')
-    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}`
+    script.src = `https://openapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=${NAVER_CLIENT_ID}&language=${naverLang}`
     script.async = true
     script.dataset.naverMap = 'true'
+    script.dataset.naverLang = naverLang
     script.onload = initMap
     document.head.appendChild(script)
-  }, [])
-
-  function initMap() {
-    if (!mapRef.current) return
-    const naver = (window as any).naver
-    if (!naver?.maps) return
-    const center = new naver.maps.LatLng(LAT, LNG)
-    const map = new naver.maps.Map(mapRef.current, {
-      center,
-      zoom: 17,
-      mapTypeControl: false,
-      scaleControl: false,
-      logoControl: true,
-      mapDataControl: false,
-    })
-    new naver.maps.Marker({
-      position: center,
-      map,
-      title: '왕실의원',
-    })
-  }
+  }, [naverLang])
 
   return (
     <div className={styles.page}>
