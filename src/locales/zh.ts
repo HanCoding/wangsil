@@ -18,12 +18,12 @@ const zh: Translations = {
     phone: '☎ 032-435-3571',
   },
   hero: {
-    label: 'PREMIUM MEDICAL CLINIC',
-    title: '15年经验，\n5万件以上的\n丰富诊疗经验医疗团队',
-    descPre: '院长亲自负责',
-    descStrong: '从咨询到手术及术后护理',
-    descPost: '的全程。',
-    descSub: '请亲身感受我们医疗团队的实力',
+    label: '面部提升专业诊所',
+    title: '面部提升，\n王室医院\n最自信',
+    descPre: '15年经验，5万件以上',
+    descStrong: '面部提升专业诊疗经验',
+    descPost: '，由院长亲自',
+    descSub: '负责从咨询到手术及术后护理的全程',
   },
   treatment: {
     sectionTitle: '面部提升专业手术',
@@ -31,17 +31,17 @@ const zh: Translations = {
     items: [
       {
         id: 'facelift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '自然、优雅——',
         titleEn: '',
         subtitle: '让时光倒流',
-        description: '下垂的脸颊、模糊的下颌线、加深的额头皱纹。\n面部提升·额部提升专业诊所\n为您找回最美丽的自己。',
+        description: '面部提升，用结果证明一切。\n下垂的脸颊、模糊的下颌线、加深的额头皱纹——\n王室医院面部提升专业诊所为您全程负责。',
         points: [] as string[],
         imageUrl: '/img/main/1.png',
       },
       {
         id: 'facelift-detail',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '面部提升',
         titleEn: '(Face Lift)',
         subtitle: '自然年轻化的核心',
@@ -55,7 +55,7 @@ const zh: Translations = {
       },
       {
         id: 'browlift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '额部提升',
         titleEn: '(Brow Lift)',
         subtitle: '眼部与额头同步年轻化',
@@ -345,7 +345,7 @@ const zh: Translations = {
       title2: '微整形',
       cards: [
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '精密设计，',
           titleBottom: '自然效果',
           desc: '综合考虑面部比例、肌肉和丰盈状态，\n只在需要的部位进行治疗。核心是\n打造自然整洁的印象，而非过度改变。',
@@ -353,7 +353,7 @@ const zh: Translations = {
           reverse: false,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '治疗后',
           titleBottom: '持续护理',
           desc: '详细告知治疗后的肿胀、维持时间、注意事项，\n同时提供适合个人状态的护理方法。',
@@ -361,7 +361,7 @@ const zh: Translations = {
           reverse: true,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '轻松开始的',
           titleBottom: '微整形',
           desc: '治疗时间短、恢复快，日常负担小，\n初次接受治疗的朋友也可以相对轻松地体验。',

@@ -18,12 +18,12 @@ const vi: Translations = {
     phone: '☎ 032-435-3571',
   },
   hero: {
-    label: 'PREMIUM MEDICAL CLINIC',
-    title: '15 năm kinh nghiệm,\nHơn 50.000\nca phẫu thuật thành công',
-    descPre: 'Bác sĩ trưởng trực tiếp phụ trách ',
-    descStrong: 'tư vấn, phẫu thuật và chăm sóc sau mổ',
-    descPost: '.',
-    descSub: 'Trải nghiệm trực tiếp chuyên môn của đội ngũ y tế chúng tôi.',
+    label: 'PHÒNG KHÁM CHUYÊN NÂNG MẶT',
+    title: 'Nâng mặt là\nthế mạnh của\nWangsil Clinic.',
+    descPre: '15 năm kinh nghiệm, hơn 50.000 ',
+    descStrong: 'ca nâng mặt chuyên biệt',
+    descPost: ' — bác sĩ trưởng',
+    descSub: 'trực tiếp phụ trách tư vấn, phẫu thuật và chăm sóc sau mổ.',
   },
   treatment: {
     sectionTitle: 'Chuyên gia nâng mặt',
@@ -31,17 +31,17 @@ const vi: Translations = {
     items: [
       {
         id: 'facelift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Tự nhiên, Thanh lịch —',
         titleEn: '',
         subtitle: 'Quay ngược thời gian',
-        description: 'Má chảy xệ, đường hàm mờ, nếp nhăn trán ngày càng sâu.\nPhòng khám chuyên nâng mặt & nâng chân mày\ngiúp bạn trở về vẻ đẹp rạng rỡ nhất.',
+        description: 'Nâng mặt — chúng tôi chứng minh bằng kết quả.\nMá chảy xệ, đường hàm mờ, nếp nhăn trán —\nPhòng khám chuyên nâng mặt Wangsil chịu trách nhiệm hoàn toàn.',
         points: [] as string[],
         imageUrl: '/img/main/1.png',
       },
       {
         id: 'facelift-detail',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Nâng mặt',
         titleEn: '(Face Lift)',
         subtitle: 'Chìa khóa cho sự trẻ hóa tự nhiên',
@@ -55,7 +55,7 @@ const vi: Translations = {
       },
       {
         id: 'browlift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Nâng chân mày',
         titleEn: '(Brow Lift)',
         subtitle: 'Trẻ hóa mắt và trán cùng lúc',
@@ -345,7 +345,7 @@ const vi: Translations = {
       title2: 'điều trị nhỏ',
       cards: [
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Thiết kế chính xác,',
           titleBottom: 'Kết quả tự nhiên',
           desc: 'Điều trị chỉ ở những vùng cần thiết,\ncân nhắc tỷ lệ khuôn mặt, trương lực cơ và độ đầy.\nChìa khóa là tạo ra vẻ ngoài tinh tế tự nhiên,\nkhông phải thay đổi quá mức.',
@@ -353,7 +353,7 @@ const vi: Translations = {
           reverse: false,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Chăm sóc',
           titleBottom: 'Tiếp tục sau điều trị',
           desc: 'Chúng tôi hướng dẫn chi tiết về sưng sau thủ thuật,\nthời gian duy trì và các lưu ý, cùng với\nlời khuyên chăm sóc cá nhân phù hợp với tình trạng của bạn.',
@@ -361,7 +361,7 @@ const vi: Translations = {
           reverse: true,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Dễ dàng bắt đầu,',
           titleBottom: 'Điều trị nhỏ',
           desc: 'Thời gian thủ thuật ngắn và phục hồi nhanh giảm thiểu\ngián đoạn cuộc sống hàng ngày, khiến nó dễ tiếp cận\ngay cả với những bệnh nhân lần đầu.',

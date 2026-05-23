@@ -18,12 +18,12 @@ const ja: Translations = {
     phone: '☎ 032-435-3571',
   },
   hero: {
-    label: 'PREMIUM MEDICAL CLINIC',
-    title: '15年のキャリア、\n5万件以上の\n施術経験を誇る医療チーム',
-    descPre: '代表院長が',
-    descStrong: '相談から手術、アフターケア',
-    descPost: 'まで直接担当します。',
-    descSub: '医療チームの実力を直接ご体験ください',
+    label: 'フェイスリフト専門クリニック',
+    title: 'フェイスリフトは\n王室医院に\nお任せください',
+    descPre: '15年のキャリア、5万件以上の',
+    descStrong: 'フェイスリフト専門施術経験',
+    descPost: 'を持つ代表院長が',
+    descSub: '相談から手術、アフターケアまで直接担当します',
   },
   treatment: {
     sectionTitle: 'フェイスリフト専門施術',
@@ -31,17 +31,17 @@ const ja: Translations = {
     items: [
       {
         id: 'facelift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '自然に、優雅に —',
         titleEn: '',
         subtitle: '時間を取り戻す',
-        description: 'たるんだ頬、ぼやけたフェイスライン、深くなったおでこのシワまで。\nフェイスリフト・額リフト専門クリニックが\nあなたの最も美しい姿を取り戻します。',
+        description: 'フェイスリフトは結果で証明します。\nたるんだ頬・ぼやけたフェイスライン・額のシワまで\n王室医院フェイスリフト専門クリニックが責任を持って対応します。',
         points: [] as string[],
         imageUrl: '/img/main/1.png',
       },
       {
         id: 'facelift-detail',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'フェイスリフト',
         titleEn: '(Face Lift)',
         subtitle: '自然な若さ回復の核心',
@@ -55,7 +55,7 @@ const ja: Translations = {
       },
       {
         id: 'browlift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '額リフト',
         titleEn: '(Brow Lift)',
         subtitle: '目元と額を同時に若返らせる',
@@ -345,7 +345,7 @@ const ja: Translations = {
       title2: 'プチ施術',
       cards: [
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '精密なデザイン、',
           titleBottom: '自然な結果',
           desc: '顔の比率と筋肉、ボリューム状態を考慮し、必要な部位にのみ\n施術が進められます。過剰な変化ではなく、自然に整った印象を\n作ることが核心です。',
@@ -353,7 +353,7 @@ const ja: Translations = {
           reverse: false,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '施術後まで',
           titleBottom: '続くケア',
           desc: '施術後のむくみ、維持期間、注意事項まで詳しくご案内し\n個人の状態に合ったケア方法をともにご案内します。',
@@ -361,7 +361,7 @@ const ja: Translations = {
           reverse: true,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: '気軽に始める',
           titleBottom: 'プチ施術',
           desc: '短い施術時間と早い回復で日常への負担が少なく\n初めての施術の方も比較的気軽にアクセスできます。',

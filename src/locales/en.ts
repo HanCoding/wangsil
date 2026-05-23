@@ -18,12 +18,12 @@ const en: Translations = {
     phone: '☎ 032-435-3571',
   },
   hero: {
-    label: 'PREMIUM MEDICAL CLINIC',
-    title: '15 Years of Expertise,\nOver 50,000\nProcedures Performed',
-    descPre: 'Our chief surgeon personally handles ',
-    descStrong: 'consultations, surgery, and aftercare',
-    descPost: '.',
-    descSub: 'Experience our medical team\'s expertise firsthand.',
+    label: 'FACELIFT SPECIALIST CLINIC',
+    title: 'Face Lift Is\nWhat Wangsil\nDoes Best.',
+    descPre: '15 years of experience, over 50,000 ',
+    descStrong: 'face lift procedures',
+    descPost: ' — our chief surgeon',
+    descSub: 'personally handles every consultation, surgery, and aftercare.',
   },
   treatment: {
     sectionTitle: 'Face Lift Specialist',
@@ -31,17 +31,17 @@ const en: Translations = {
     items: [
       {
         id: 'facelift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Naturally, Gracefully —',
         titleEn: '',
         subtitle: 'Turn Back Time',
-        description: 'Sagging cheeks, blurred jawline, deepening forehead wrinkles.\nOur face lift & brow lift specialist clinic\nrestores your most beautiful self.',
+        description: 'When it comes to face lifts, our results speak for themselves.\nSagging cheeks, blurred jawlines, forehead wrinkles —\nWangsil Face Lift Specialist Clinic takes full responsibility.',
         points: [] as string[],
         imageUrl: '/img/main/1.png',
       },
       {
         id: 'facelift-detail',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Face Lift',
         titleEn: '(Face Lift)',
         subtitle: 'The Key to Natural Rejuvenation',
@@ -55,7 +55,7 @@ const en: Translations = {
       },
       {
         id: 'browlift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: 'Brow Lift',
         titleEn: '(Brow Lift)',
         subtitle: 'Rejuvenate Eyes and Forehead Together',
@@ -345,7 +345,7 @@ const en: Translations = {
       title2: 'mini treatments',
       cards: [
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Precise Design,',
           titleBottom: 'Natural Results',
           desc: 'Treatment is performed only on the areas needed,\nconsidering facial proportions, muscle tone, and volume.\nThe key is creating a naturally refined look,\nnot an exaggerated change.',
@@ -353,7 +353,7 @@ const en: Translations = {
           reverse: false,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Care That',
           titleBottom: 'Continues After',
           desc: 'We provide detailed guidance on post-procedure\nswelling, longevity, and precautions, along with\npersonalised aftercare advice suited to your condition.',
@@ -361,7 +361,7 @@ const en: Translations = {
           reverse: true,
         },
         {
-          label: 'PREMIUM AFTER CARE SYSTEM',
+          label: 'FACELIFT SPECIALIST CLINIC',
           titleTop: 'Easy to Start,',
           titleBottom: 'Mini Treatment',
           desc: 'Short procedure time and fast recovery minimise\ndisruption to your daily life, making it approachable\neven for first-time patients.',

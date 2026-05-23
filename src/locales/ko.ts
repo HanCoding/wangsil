@@ -16,12 +16,12 @@ const ko = {
     phone: '☎ 032-435-3571',
   },
   hero: {
-    label: 'PREMIUM MEDICAL CLINIC',
-    title: '15년 경력,\n5만건 이상의\n시술경험을 보유한 의료진',
-    descPre: '대표원장이 ',
-    descStrong: '상담부터 수술, 사후관리',
-    descPost: '까지 직접 담당합니다.',
-    descSub: '의료진의 실력을 직접 느껴보세요',
+    label: '안면거상 전문 클리닉',
+    title: '안면거상은\n왕실의원이\n자신있습니다',
+    descPre: '15년 경력, 5만건 이상 ',
+    descStrong: '안면거상 전문 시술 경험',
+    descPost: '을 보유한 대표원장이',
+    descSub: '상담부터 수술, 사후관리까지 직접 담당합니다',
   },
   treatment: {
     sectionTitle: '안면거상 전문 시술',
@@ -29,17 +29,17 @@ const ko = {
     items: [
       {
         id: 'facelift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '자연스럽게, 우아하게 —',
         titleEn: '',
         subtitle: '시간을 되돌리다',
-        description: '처진 볼살, 흐려진 턱선, 깊어진 이마 주름까지.\n안면거상·이마거상 전문 클리닉이\n당신의 가장 아름다운 모습을 되찾아 드립니다.',
+        description: '안면거상만큼은 결과로 증명합니다.\n처진 볼살·흐려진 턱선·이마 주름까지\n왕실의원 안면거상 전문 클리닉이 책임집니다.',
         points: [] as string[],
         imageUrl: '/img/main/1.png',
       },
       {
         id: 'facelift-detail',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '안면거상',
         titleEn: '(Face Lift)',
         subtitle: '자연스러운 젊음 회복의 핵심',
@@ -53,7 +53,7 @@ const ko = {
       },
       {
         id: 'browlift',
-        label: 'PREMIUM AFTER CARE SYSTEM',
+        label: 'FACELIFT SPECIALIST CLINIC',
         title: '이마거상',
         titleEn: '(Brow Lift)',
         subtitle: '눈매와 이마를 동시에 젊게',
