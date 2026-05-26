@@ -23,12 +23,14 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(80, 50, 60, 0.25) 0%,
-    rgba(90, 55, 65, 0.10) 50%,
-    transparent 100%
-  );
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
+    linear-gradient(
+      to right,
+      rgba(80, 50, 60, 0.25) 0%,
+      rgba(90, 55, 65, 0.10) 50%,
+      transparent 100%
+    );
 }
 
 .heroContent {
@@ -451,6 +453,7 @@
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .hero { height: 320px; }
+  .heroImg { object-position: 65% center; }
   .baGrid { grid-template-columns: 1fr; }
   .hexContent { justify-content: center; }
   .hexRight { text-align: center; }
