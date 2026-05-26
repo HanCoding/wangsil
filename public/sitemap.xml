@@ -1,28 +1,461 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- 홈 -->
   <url>
-    <loc>https://wangsil.pages.dev/</loc>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wangsil.pages.dev/about</loc>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 병원소개 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://wangsil.pages.dev/eye</loc>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/about</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/about"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/about"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 눈성형 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/eye</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/eye"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wangsil.pages.dev/nose</loc>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/eye</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/eye"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/eye"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/eye"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/eye"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/eye"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 코성형 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/nose</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/nose"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://wangsil.pages.dev/facelift</loc>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/nose</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/nose"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/nose"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/nose"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/nose"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/nose"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 안면거상 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/facelift</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/facelift"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 쁘띠 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/petti</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/petti"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/petti</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/petti"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/petti"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/petti"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/petti"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/petti"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 레이저 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/laser</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/laser"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/laser</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/laser"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/laser"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/laser"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/laser"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/laser"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 오시는길 -->
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/community</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/community"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/community"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/community"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/en/community</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/community"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/community"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/community"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/ja/community</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/community"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/community"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/community"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/zh/community</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/community"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/community"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/community"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://xn--oy2bq2opmc0oo12cuzc.net/vi/community</loc>
+    <xhtml:link rel="alternate" hreflang="ko"        href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://xn--oy2bq2opmc0oo12cuzc.net/en/community"/>
+    <xhtml:link rel="alternate" hreflang="ja"        href="https://xn--oy2bq2opmc0oo12cuzc.net/ja/community"/>
+    <xhtml:link rel="alternate" hreflang="zh"        href="https://xn--oy2bq2opmc0oo12cuzc.net/zh/community"/>
+    <xhtml:link rel="alternate" hreflang="vi"        href="https://xn--oy2bq2opmc0oo12cuzc.net/vi/community"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xn--oy2bq2opmc0oo12cuzc.net/community"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

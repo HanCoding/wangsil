@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wangsil.pages.dev/sitemap.xml
+Sitemap: https://xn--oy2bq2opmc0oo12cuzc.net/sitemap.xml
