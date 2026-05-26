@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { HelmetProvider, Helmet } from 'react-helmet-async'
 import LocaleLayout from './components/LocaleLayout'
 import LocaleAutoRedirect from './components/LocaleAutoRedirect'
@@ -16,6 +16,13 @@ import PettiPage from './pages/PettiPage'
 import LaserPage from './pages/LaserPage'
 import LocationPage from './pages/LocationPage'
 import './App.css'
+
+function CommunityRedirect() {
+  const { pathname } = useLocation()
+  const localeMatch = pathname.match(/^\/(en|ja|zh|vi)/)
+  const prefix = localeMatch ? `/${localeMatch[1]}` : ''
+  return <Navigate to={`${prefix}/community`} replace />
+}
 
 function HomePage() {
   return (
@@ -41,6 +48,7 @@ const subRoutes = (
     <Route path="petti" element={<PettiPage />} />
     <Route path="laser" element={<LaserPage />} />
     <Route path="community" element={<LocationPage />} />
+    <Route path="community/*" element={<CommunityRedirect />} />
   </>
 )
 

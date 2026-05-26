@@ -27,11 +27,13 @@ export default function EventPopup() {
   return (
     <div className={styles.overlay} onClick={(e) => { if (e.target === e.currentTarget) close() }}>
       <div className={styles.popup}>
-        <img
-          src="/img/event/event.png"
-          alt="이벤트 안내"
-          className={styles.image}
-        />
+        <a href="https://pf.kakao.com/_ySgVX" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/img/event/event.png"
+            alt="이벤트 안내"
+            className={styles.image}
+          />
+        </a>
         <div className={styles.footer}>
           <label className={styles.checkLabel}>
             <input
