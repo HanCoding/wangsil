@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from 'react'
 import styles from './RealSelfie.module.css'
 import { useT } from '../context/LocaleContext'
-import { useLocalePath } from '../hooks/useLocalePath'
 
 const selfieImages = [
   { id: 1, src: '/img/main/4.png' },
@@ -29,7 +28,6 @@ function useIntersection() {
 export default function RealSelfie() {
   const { ref, visible } = useIntersection()
   const t = useT()
-  const localePath = useLocalePath()
 
   return (
     <section className={styles.section}>
@@ -39,10 +37,6 @@ export default function RealSelfie() {
             <h2 className="section-title" style={{ textAlign: 'left' }}>{t.selfie.title}</h2>
             <p className="section-subtitle" style={{ textAlign: 'left' }}>{t.selfie.subtitle}</p>
           </div>
-          <a href={localePath('/community/selfie')} className={styles.moreBtn}>
-            {t.selfie.moreBtn}
-            <span className={styles.plusIcon}>+</span>
-          </a>
         </div>
 
         <div className={styles.grid}>
