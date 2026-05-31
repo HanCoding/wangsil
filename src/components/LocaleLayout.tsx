@@ -4,6 +4,7 @@ import { LocaleProvider } from '../context/LocaleContext'
 import Header from './Header'
 import Footer from './Footer'
 import FloatingButtons from './FloatingButtons'
+import HreflangTags from './HreflangTags'
 import type { Locale } from '../context/LocaleContext'
 
 function LocaleSync({ locale }: { locale: Locale }) {
@@ -17,6 +18,7 @@ export default function LocaleLayout({ locale }: { locale: Locale }) {
   return (
     <LocaleProvider locale={locale}>
       <LocaleSync locale={locale} />
+      <HreflangTags />
       <Header />
       <main>
         <Outlet />
