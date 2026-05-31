@@ -60,7 +60,7 @@ export default function App() {
         <Helmet>
           <title>왕실의원 | 인천 성형외과 - 눈성형·코성형·안면거상 전문</title>
           <meta name="description" content="인천 부평 왕실의원. 15년 경력 원장이 상담부터 수술까지 직접 담당. 쌍커풀·눈매교정·코성형·안면거상·이마거상. 032-435-3571" />
-          <link rel="canonical" href="https://wangsil.pages.dev/" />
+          <link rel="canonical" href="https://xn--oy2bq2opmc0oo12cuzc.net/" />
         </Helmet>
         <Routes>
           <Route path="/" element={<LocaleLayout locale="ko" />}>

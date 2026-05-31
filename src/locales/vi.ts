@@ -181,7 +181,7 @@ const vi: Translations = {
     meta: {
       title: 'Phẫu thuật mắt | Phòng khám Wangsil - Mí đôi · Chỉnh mắt · Mở góc mắt',
       desc: 'Phòng khám Wangsil chuyên phẫu thuật mắt. Mí đôi (chôn chỉ & rạch mổ), mở góc mắt trong/ngoài, chỉnh mắt sụp, bọng mắt dưới. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/eye',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/eye',
     },
     hero: {
       label: 'Đường mí đôi tự nhiên ————',
@@ -251,7 +251,7 @@ const vi: Translations = {
     meta: {
       title: 'Phẫu thuật mũi | Phòng khám Wangsil - Chuyên gia tạo hình mũi',
       desc: 'Phòng khám Wangsil chuyên tạo hình mũi. Phẫu thuật mũi Barbie, chỉnh đầu mũi, thu nhỏ cánh mũi, sửa mũi gồ. Chẩn đoán chính xác 3DCT, tư vấn 1:1 cá nhân hóa. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/nose',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/nose',
     },
     hero: {
       label: 'Sống mũi như người nổi tiếng ————',
@@ -306,7 +306,7 @@ const vi: Translations = {
     meta: {
       title: 'Nâng mặt | Phòng khám Wangsil - Nâng chân mày · Nâng giữa mặt · Nâng cổ',
       desc: 'Phòng khám Wangsil chuyên nâng mặt. Điều chỉnh đồng thời da chảy xệ và lớp SMAS. Nâng mặt, nâng chân mày, nâng giữa mặt, nâng cổ. Khôi phục đường nét tự nhiên. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/facelift',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/facelift',
     },
     hero: {
       label: 'Nâng mặt chống trọng lực ————',
@@ -325,7 +325,7 @@ const vi: Translations = {
     meta: {
       title: 'Điều trị nhỏ | Phòng khám Wangsil - Botox & Filler',
       desc: 'Phòng khám Wangsil điều trị nhỏ. Thay đổi tự nhiên với Botox & Filler. Thủ thuật 10–20 phút, trở lại cuộc sống ngay lập tức. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/petti',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/petti',
     },
     hero: {
       label: 'Botox & Filler, thay đổi tinh tế phù hợp với khuôn mặt bạn ————',
@@ -375,7 +375,7 @@ const vi: Translations = {
     meta: {
       title: 'Điều trị Laser | Phòng khám Wangsil - Fraxel · Pico · IPL · CO2 Laser',
       desc: 'Phòng khám Wangsil điều trị laser. Fraxel, Pico, IPL, Toning, CO2 laser. Tàn nhang, đốm & nốt ruồi, tái tạo da. Gây tê tại chỗ, trở lại cuộc sống ngay lập tức. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/laser',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/laser',
     },
     hero: {
       label: 'Làn da sáng hơn, rõ hơn — Laser Phòng khám Wangsil ————',
@@ -441,7 +441,7 @@ const vi: Translations = {
     meta: {
       title: 'Chỉ đường | Phòng khám Wangsil - 948 Gyeongin-ro, Bupyeong-gu, Incheon',
       desc: 'Chỉ đường đến Phòng khám Wangsil. Tầng 2, 948 Gyeongin-ro, Bupyeong-gu, Incheon (Tòa nhà y tế Yuseong). Đi bộ 5 phút từ Cửa ra 1 ga Bupyeong. 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/vi/community',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/vi/community',
     },
     hero: {
       label: 'Phòng khám Wangsil — Cách đến ————',

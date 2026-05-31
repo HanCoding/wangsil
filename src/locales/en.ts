@@ -181,7 +181,7 @@ const en: Translations = {
     meta: {
       title: 'Eye Surgery | Wangsil Clinic - Double Eyelid · Eye Correction · Canthoplasty',
       desc: 'Wangsil Clinic eye surgery specialist. Double eyelid (burial & incision), canthoplasty, ptosis correction, aegyo-sal. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/eye',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/eye',
     },
     hero: {
       label: 'Natural double eyelid line ————',
@@ -251,7 +251,7 @@ const en: Translations = {
     meta: {
       title: 'Nose Surgery | Wangsil Clinic - Rhinoplasty Specialist',
       desc: 'Wangsil Clinic rhinoplasty specialist. Barbie nose surgery, tip plasty, alar reduction, hump nose correction. 3DCT precision diagnosis, 1:1 custom consultation. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/nose',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/nose',
     },
     hero: {
       label: 'Celebrity-worthy rhinoplasty ————',
@@ -306,7 +306,7 @@ const en: Translations = {
     meta: {
       title: 'Face Lift | Wangsil Clinic - Brow Lift · Mid-Face Lift · Neck Lift',
       desc: 'Wangsil Clinic face lift specialist. Simultaneous correction of sagging skin and SMAS layer. Face lift, brow lift, mid-face lift, neck lift. Natural contour restoration. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/facelift',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/facelift',
     },
     hero: {
       label: 'Face lift that defies gravity ————',
@@ -325,7 +325,7 @@ const en: Translations = {
     meta: {
       title: 'Mini Treatment | Wangsil Clinic - Botox & Filler',
       desc: 'Wangsil Clinic mini treatment. Natural change with Botox & Filler. 10–20 minute procedure, immediate return to daily life. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/petti',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/petti',
     },
     hero: {
       label: 'Subtle change with Botox & Filler, tailored to your face ————',
@@ -375,7 +375,7 @@ const en: Translations = {
     meta: {
       title: 'Laser Treatment | Wangsil Clinic - Fraxel · Pico · IPL · CO2 Laser',
       desc: 'Wangsil Clinic laser treatments. Fraxel, Pico, IPL, Toning, CO2 laser. Pigmentation, spot & mole removal, skin regeneration. Topical anaesthesia, immediate return to daily life. Incheon Bupyeong 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/laser',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/laser',
     },
     hero: {
       label: 'Brighter, clearer skin — Wangsil Clinic Laser ————',
@@ -441,7 +441,7 @@ const en: Translations = {
     meta: {
       title: 'Directions | Wangsil Clinic - 948 Gyeongin-ro, Bupyeong-gu, Incheon',
       desc: 'Directions to Wangsil Clinic. 2F, 948 Gyeongin-ro, Bupyeong-gu, Incheon (Yuseong Medical Building). 5-minute walk from Bupyeong Station Exit 1. 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/en/community',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/en/community',
     },
     hero: {
       label: 'Wangsil Clinic — How to Find Us ————',

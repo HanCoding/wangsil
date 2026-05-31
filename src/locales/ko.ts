@@ -179,7 +179,7 @@ const ko = {
     meta: {
       title: '눈성형 | 왕실의원 - 쌍커풀·눈매교정·트임성형',
       desc: '왕실의원 눈성형 전문 클리닉. 쌍커풀(매몰·절개), 앞트임·외안각트임, 눈매교정, 애교살 수술. 인천 부평 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/eye',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/eye',
     },
     hero: {
       label: '자연스러운 쌍커풀 라인 ————',
@@ -249,7 +249,7 @@ const ko = {
     meta: {
       title: '코성형 | 왕실의원 - 바비인형 코수술 전문',
       desc: '왕실의원 코성형 전문 클리닉. 바비인형 코수술, 코끝성형, 콧볼축소, 매부리코 교정. 3DCT 정밀 진단, 1:1 맞춤 상담. 인천 부평 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/nose',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/nose',
     },
     hero: {
       label: '이젠나도 연예인 코성형 ————',
@@ -304,7 +304,7 @@ const ko = {
     meta: {
       title: '안면거상 | 왕실의원 - 이마거상·중안면거상·목거상',
       desc: '왕실의원 안면거상 전문 클리닉. 처진 피부와 근막층 동시 교정. 안면거상·이마거상·중안면거상·목거상. 자연스러운 윤곽 회복. 인천 부평 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/facelift',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/facelift',
     },
     hero: {
       label: '중력을 거스르는 안면거상 ————',
@@ -323,7 +323,7 @@ const ko = {
     meta: {
       title: '쁘띠로 | 왕실의원 - 보톡스·필러 쁘띠 시술',
       desc: '왕실의원 쁘띠 시술 클리닉. 보톡스·필러로 자연스럽게 달라지는 인상. 10~20분 시술, 즉시 일상생활 가능. 인천 부평 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/petti',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/petti',
     },
     hero: {
       label: '보톡스·필러로 과하지 않게, 내 얼굴에 맞는 변화 ————',
@@ -373,7 +373,7 @@ const ko = {
     meta: {
       title: '레이저 시술 | 왕실의원 - 프락셀·피코·IPL·CO2 레이저',
       desc: '왕실의원 레이저 시술 클리닉. 프락셀·피코·IPL·토닝·CO2 레이저. 기미·잡티·점 제거, 피부 재생. 연고마취, 즉시 일상생활 가능. 인천 부평 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/laser',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/laser',
     },
     hero: {
       label: '피부를 맑고 투명하게, 왕실의원 레이저 ————',
@@ -439,7 +439,7 @@ const ko = {
     meta: {
       title: '오시는길 | 왕실의원 - 인천 부평구 경인로 948',
       desc: '왕실의원 오시는길. 인천광역시 부평구 경인로 948 유성메디컬 빌딩 2층. 지하철 1호선 부평역 1번출구 도보 5분. 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/community',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/community',
     },
     hero: {
       label: '왕실의원 위치안내 ————',

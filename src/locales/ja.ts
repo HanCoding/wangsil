@@ -181,7 +181,7 @@ const ja: Translations = {
     meta: {
       title: '目の整形 | 王室医院 - 二重まぶた・目元矯正・目頭切開',
       desc: '王室医院 目の整形専門クリニック。二重まぶた（埋没法・切開法）、目頭切開・外眼角切開、目元矯正、涙袋手術。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/eye',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/eye',
     },
     hero: {
       label: '自然な二重ラインで ————',
@@ -251,7 +251,7 @@ const ja: Translations = {
     meta: {
       title: '鼻の整形 | 王室医院 - バービー鼻手術専門',
       desc: '王室医院 鼻の整形専門クリニック。バービー鼻手術、鼻尖形成、小鼻縮小、鷲鼻矯正。3DCT精密診断、1:1カスタム相談。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/nose',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/nose',
     },
     hero: {
       label: '私も芸能人のような鼻整形 ————',
@@ -306,7 +306,7 @@ const ja: Translations = {
     meta: {
       title: 'フェイスリフト | 王室医院 - 額リフト・中顔面リフト・ネックリフト',
       desc: '王室医院 フェイスリフト専門クリニック。たるんだ皮膚と筋膜層を同時矯正。フェイスリフト・額リフト・中顔面リフト・ネックリフト。自然な輪郭回復。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/facelift',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/facelift',
     },
     hero: {
       label: '重力に逆らうフェイスリフト ————',
@@ -325,7 +325,7 @@ const ja: Translations = {
     meta: {
       title: 'プチ施術 | 王室医院 - ボトックス・フィラー プチ施術',
       desc: '王室医院 プチ施術クリニック。ボトックス・フィラーで自然に変わる印象。10〜20分施術、即日常生活が可能。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/petti',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/petti',
     },
     hero: {
       label: 'ボトックス・フィラーで過剰にならず、自分の顔に合った変化 ————',
@@ -375,7 +375,7 @@ const ja: Translations = {
     meta: {
       title: 'レーザー施術 | 王室医院 - フラクセル・ピコ・IPL・CO2レーザー',
       desc: '王室医院 レーザー施術クリニック。フラクセル・ピコ・IPL・トーニング・CO2レーザー。シミ・そばかす・ほくろ除去、肌再生。麻酔クリーム、即日常生活が可能。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/laser',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/laser',
     },
     hero: {
       label: '肌を明るく透明に、王室医院のレーザー ————',
@@ -441,7 +441,7 @@ const ja: Translations = {
     meta: {
       title: 'アクセス | 王室医院 - 仁川富平区京仁路948',
       desc: '王室医院アクセス案内。仁川広域市富平区京仁路948 有城メディカルビル2階。地下鉄1号線富平駅1番出口から徒歩5分。032-435-3571',
-      canonical: 'https://wangsil.pages.dev/ja/community',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/ja/community',
     },
     hero: {
       label: '王室医院 アクセス案内 ————',

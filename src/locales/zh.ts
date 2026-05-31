@@ -181,7 +181,7 @@ const zh: Translations = {
     meta: {
       title: '眼部整形 | 王室医院 - 双眼皮·眼型矫正·开眼角',
       desc: '王室医院眼部整形专业诊所。双眼皮（埋线法·切开法）、内眦切开·外眦切开、眼型矫正、卧蚕手术。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/eye',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/eye',
     },
     hero: {
       label: '自然的双眼皮线条 ————',
@@ -251,7 +251,7 @@ const zh: Translations = {
     meta: {
       title: '鼻部整形 | 王室医院 - 芭比鼻手术专家',
       desc: '王室医院鼻部整形专业诊所。芭比鼻手术、鼻尖整形、鼻翼缩小、驼峰鼻矫正。3DCT精密诊断，1:1定制咨询。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/nose',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/nose',
     },
     hero: {
       label: '如今我也能拥有明星同款鼻形 ————',
@@ -306,7 +306,7 @@ const zh: Translations = {
     meta: {
       title: '面部提升 | 王室医院 - 额部提升·中面部提升·颈部提升',
       desc: '王室医院面部提升专业诊所。下垂皮肤与筋膜层同步矫正。面部提升·额部提升·中面部提升·颈部提升。自然轮廓恢复。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/facelift',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/facelift',
     },
     hero: {
       label: '抵抗重力的面部提升 ————',
@@ -325,7 +325,7 @@ const zh: Translations = {
     meta: {
       title: '微整形 | 王室医院 - 肉毒素·玻尿酸 微整形',
       desc: '王室医院微整形诊所。肉毒素·玻尿酸自然改善面容。10~20分钟手术，即刻恢复日常生活。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/petti',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/petti',
     },
     hero: {
       label: '肉毒素·玻尿酸，适度自然，符合您的面容 ————',
@@ -375,7 +375,7 @@ const zh: Translations = {
     meta: {
       title: '激光治疗 | 王室医院 - 像素激光·皮秒激光·IPL·CO2激光',
       desc: '王室医院激光治疗诊所。像素激光·皮秒激光·IPL·调Q激光·CO2激光。祛斑·痘印·色素去除，皮肤再生。涂抹麻醉，即刻恢复日常生活。仁川富平 032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/laser',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/laser',
     },
     hero: {
       label: '让肌肤焕发光彩，王室医院激光 ————',
@@ -441,7 +441,7 @@ const zh: Translations = {
     meta: {
       title: '交通指南 | 王室医院 - 仁川富平区京仁路948',
       desc: '王室医院交通指南。仁川广域市富平区京仁路948 有城医疗大厦2楼。地铁1号线富平站1号出口步行5分钟。032-435-3571',
-      canonical: 'https://wangsil.pages.dev/zh/community',
+      canonical: 'https://xn--oy2bq2opmc0oo12cuzc.net/zh/community',
     },
     hero: {
       label: '王室医院位置指南 ————',
