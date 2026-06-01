@@ -78,6 +78,7 @@ export default function App() {
           <Route path="/vi" element={<LocaleLayout locale="vi" />}>
             {subRoutes}
           </Route>
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

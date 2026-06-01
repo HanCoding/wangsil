@@ -21,9 +21,9 @@ export default function HreflangTags() {
   return (
     <Helmet>
       {LOCALES.map(locale => (
-        <link key={locale} rel="alternate" hreflang={locale} href={buildHref(locale, base)} />
+        <link key={locale} rel="alternate" hrefLang={locale} href={buildHref(locale, base)} />
       ))}
-      <link rel="alternate" hreflang="x-default" href={buildHref('ko', base)} />
+      <link rel="alternate" hrefLang="x-default" href={buildHref('ko', base)} />
     </Helmet>
   )
 }
