@@ -43,7 +43,6 @@ const subRoutes = (
     <Route path="eye" element={<EyePage />} />
     <Route path="nose" element={<NosePage />} />
     <Route path="facelift" element={<FaceliftPage />} />
-    <Route path="facelift2" element={<FaceliftPage />} />
     <Route path="petti" element={<PettiPage />} />
     <Route path="laser" element={<LaserPage />} />
     <Route path="community" element={<LocationPage />} />

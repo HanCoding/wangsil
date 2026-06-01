@@ -3,7 +3,7 @@ const path = require('path')
 const { pathToFileURL } = require('url')
 
 const LOCALES = ['', '/en', '/ja', '/zh', '/vi']
-const PAGES = ['/', '/about', '/eye', '/nose', '/facelift', '/facelift2', '/petti', '/laser', '/community']
+const PAGES = ['/', '/about', '/eye', '/nose', '/facelift', '/petti', '/laser', '/community']
 
 const ROUTES = LOCALES.flatMap(locale =>
   PAGES.map(page => (locale === '' ? page : `${locale}${page}`))
