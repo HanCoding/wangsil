@@ -1,15 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './EventPopup.module.css'
 
-const STORAGE_KEY = 'wangsil_event_popup_hide_date'
-
-/** 정가(원) / 이벤트가(원) — 할인율은 자동 계산됩니다. */
-const PRICES = [
-  { name: '필러', original: 200_000, value: 60_000 },
-  { name: '눈썹거상', original: 1_000_000, value: 600_000 },
-  { name: '눈밑지방제거', original: 1_000_000, value: 600_000 },
-  { name: '안면거상술', original: 4_500_000, value: 2_500_000 },
-]
+const STORAGE_KEY = 'wangsil_event_popup_hide_date_v2'
 
 export default function EventPopup() {
   const [visible, setVisible] = useState(false)
@@ -40,35 +32,78 @@ export default function EventPopup() {
           href="https://pf.kakao.com/_ySgVX"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="왕실의원 가정의달 이벤트 — 애교필러 5.5만원부터, 필러 6만원, 눈썹거상 60만원, 눈밑지방제거 60만원, 안면거상술 250만원, 실리프팅 얼굴전체 99만원 (부가세 10% 별도)"
+          aria-label="왕실의원 이벤트 안내 — 피부·눈성형·동안성형·필러 이벤트"
         >
           <div className={styles.header}>
-            <p className={styles.eyebrow}>Family Month Special</p>
-            <h2 className={styles.title}>가정의 달 이벤트</h2>
-            <span className={styles.divider} aria-hidden="true" />
-            <p className={styles.highlight}>애교필러 <strong>5.5만원</strong>~</p>
+            <p className={styles.eyebrow}>Special Event</p>
+            <h2 className={styles.title}>이벤트 안내</h2>
           </div>
 
-          <ul className={styles.priceList}>
-            {PRICES.map((item) => {
-              const off = Math.round((1 - item.value / item.original) * 100)
-              return (
-                <li className={styles.priceRow} key={item.name}>
-                  <span className={styles.name}>{item.name}</span>
-                  <span className={styles.mid}>
-                    <span className={styles.off}>{off}%↓</span>
-                    <span className={styles.original}>{item.original.toLocaleString()}원</span>
-                  </span>
-                  <span className={styles.price}>
-                    <strong>{item.value / 10_000}</strong>
-                    <em>만원</em>
+          <div className={styles.body}>
+
+            {/* 피부 이벤트 */}
+            <section className={styles.section}>
+              <h3 className={styles.sectionTitle}>피부 이벤트</h3>
+              <ul className={styles.simpleList}>
+                <li>
+                  <span className={styles.itemName}>얼굴 스킨보톡스</span>
+                  <span className={styles.itemPrice}>10만원</span>
+                </li>
+                <li>
+                  <span className={styles.itemName}>물광주사</span>
+                  <span className={styles.itemPrice}>5.9만원</span>
+                </li>
+              </ul>
+            </section>
+
+            {/* 눈성형 이벤트 */}
+            <section className={styles.section}>
+              <h3 className={styles.sectionTitle}>눈성형 이벤트</h3>
+              <ul className={styles.simpleList}>
+                <li>
+                  <span className={styles.itemName}>눈밑지방재배치</span>
+                  <span className={styles.itemPrice}>70만원</span>
+                </li>
+                <li>
+                  <span className={styles.itemName}>눈썹거상술</span>
+                  <span className={styles.itemPrice}>70만원</span>
+                </li>
+              </ul>
+            </section>
+
+            {/* 동안성형 이벤트 */}
+            <section className={`${styles.section} ${styles.featured}`}>
+              <h3 className={styles.sectionTitle}>동안성형 이벤트</h3>
+              <p className={styles.consultTitle}>실리프팅 · 안면거상 재수술 상담</p>
+<ul className={styles.simpleList}>
+                <li>
+                  <span className={styles.itemName}>안면거상</span>
+                  <span className={styles.itemPrice}>280만원</span>
+                </li>
+                <li className={styles.subGroup}>
+                  <span className={styles.itemName}>실리프팅</span>
+                  <span className={styles.subPrices}>
+                    <span>한부위 <em>50만원</em></span>
+                    <span>얼굴전체 <em>99만원</em></span>
+                    <span>실거상 <em>200만원</em></span>
                   </span>
                 </li>
-              )
-            })}
-          </ul>
+              </ul>
+            </section>
 
-          <div className={styles.band}>실리프팅 얼굴전체 <em>99만원</em></div>
+            {/* 필러 이벤트 */}
+            <section className={styles.section}>
+              <h3 className={styles.sectionTitle}>필러 이벤트</h3>
+<ul className={styles.simpleList}>
+                <li>
+                  <span className={styles.itemName}>풀페이스 필러 10cc</span>
+                  <span className={styles.itemPrice}>89만원</span>
+                </li>
+              </ul>
+            </section>
+
+            <p className={styles.taxNote}>★ 부가세 별도</p>
+          </div>
         </a>
 
         <div className={styles.footer}>
