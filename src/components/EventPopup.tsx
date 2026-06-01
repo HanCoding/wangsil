@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 import styles from './EventPopup.module.css'
+import { useT } from '../context/LocaleContext'
 
 const STORAGE_KEY = 'wangsil_event_popup_hide_date_v2'
 
 export default function EventPopup() {
+  const { popup: p } = useT()
   const [visible, setVisible] = useState(false)
   const [hideToday, setHideToday] = useState(false)
 
@@ -32,77 +34,73 @@ export default function EventPopup() {
           href="https://pf.kakao.com/_ySgVX"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="왕실의원 이벤트 안내 — 피부·눈성형·동안성형·필러 이벤트"
+          aria-label={p.ariaLabel}
         >
           <div className={styles.header}>
-            <p className={styles.eyebrow}>Special Event</p>
-            <h2 className={styles.title}>이벤트 안내</h2>
+            <p className={styles.eyebrow}>{p.eyebrow}</p>
+            <h2 className={styles.title}>{p.title}</h2>
           </div>
 
           <div className={styles.body}>
 
-            {/* 피부 이벤트 */}
             <section className={styles.section}>
-              <h3 className={styles.sectionTitle}>피부 이벤트</h3>
+              <h3 className={styles.sectionTitle}>{p.skinTitle}</h3>
               <ul className={styles.simpleList}>
                 <li>
-                  <span className={styles.itemName}>얼굴 스킨보톡스</span>
-                  <span className={styles.itemPrice}>10만원</span>
+                  <span className={styles.itemName}>{p.skinBotox}</span>
+                  <span className={styles.itemPrice}>{p.skinBotoxPrice}</span>
                 </li>
                 <li>
-                  <span className={styles.itemName}>물광주사</span>
-                  <span className={styles.itemPrice}>5.9만원</span>
+                  <span className={styles.itemName}>{p.skinHydro}</span>
+                  <span className={styles.itemPrice}>{p.skinHydroPrice}</span>
                 </li>
               </ul>
             </section>
 
-            {/* 눈성형 이벤트 */}
             <section className={styles.section}>
-              <h3 className={styles.sectionTitle}>눈성형 이벤트</h3>
+              <h3 className={styles.sectionTitle}>{p.eyeTitle}</h3>
               <ul className={styles.simpleList}>
                 <li>
-                  <span className={styles.itemName}>눈밑지방재배치</span>
-                  <span className={styles.itemPrice}>70만원</span>
+                  <span className={styles.itemName}>{p.eyeFatRepo}</span>
+                  <span className={styles.itemPrice}>{p.eyeFatRepoPrice}</span>
                 </li>
                 <li>
-                  <span className={styles.itemName}>눈썹거상술</span>
-                  <span className={styles.itemPrice}>70만원</span>
+                  <span className={styles.itemName}>{p.eyeBrowLift}</span>
+                  <span className={styles.itemPrice}>{p.eyeBrowLiftPrice}</span>
                 </li>
               </ul>
             </section>
 
-            {/* 동안성형 이벤트 */}
             <section className={`${styles.section} ${styles.featured}`}>
-              <h3 className={styles.sectionTitle}>동안성형 이벤트</h3>
-              <p className={styles.consultTitle}>실리프팅 · 안면거상 재수술 상담</p>
-<ul className={styles.simpleList}>
+              <h3 className={styles.sectionTitle}>{p.antiagingTitle}</h3>
+              <p className={styles.consultTitle}>{p.antiagingConsult}</p>
+              <ul className={styles.simpleList}>
                 <li>
-                  <span className={styles.itemName}>안면거상</span>
-                  <span className={styles.itemPrice}>280만원</span>
+                  <span className={styles.itemName}>{p.antiagingFacelift}</span>
+                  <span className={styles.itemPrice}>{p.antiagingFaceliftPrice}</span>
                 </li>
                 <li className={styles.subGroup}>
-                  <span className={styles.itemName}>실리프팅</span>
+                  <span className={styles.itemName}>{p.antiagingThread}</span>
                   <span className={styles.subPrices}>
-                    <span>한부위 <em>50만원</em></span>
-                    <span>얼굴전체 <em>99만원</em></span>
-                    <span>실거상 <em>200만원</em></span>
+                    <span>{p.antiagingThreadSingle} <em>{p.antiagingThreadSinglePrice}</em></span>
+                    <span>{p.antiagingThreadFull} <em>{p.antiagingThreadFullPrice}</em></span>
+                    <span>{p.antiagingThreadSilhouette} <em>{p.antiagingThreadSilhouettePrice}</em></span>
                   </span>
                 </li>
               </ul>
             </section>
 
-            {/* 필러 이벤트 */}
             <section className={styles.section}>
-              <h3 className={styles.sectionTitle}>필러 이벤트</h3>
-<ul className={styles.simpleList}>
+              <h3 className={styles.sectionTitle}>{p.fillerTitle}</h3>
+              <ul className={styles.simpleList}>
                 <li>
-                  <span className={styles.itemName}>풀페이스 필러 10cc</span>
-                  <span className={styles.itemPrice}>89만원</span>
+                  <span className={styles.itemName}>{p.fillerFull}</span>
+                  <span className={styles.itemPrice}>{p.fillerFullPrice}</span>
                 </li>
               </ul>
             </section>
 
-            <p className={styles.taxNote}>★ 부가세 별도</p>
+            <p className={styles.taxNote}>{p.taxNote}</p>
           </div>
         </a>
 
@@ -114,9 +112,9 @@ export default function EventPopup() {
               onChange={(e) => setHideToday(e.target.checked)}
               className={styles.checkbox}
             />
-            오늘은 더 보지 않기
+            {p.hideToday}
           </label>
-          <button className={styles.closeBtn} onClick={close}>닫기 ✕</button>
+          <button className={styles.closeBtn} onClick={close}>{p.close}</button>
         </div>
       </div>
     </div>
