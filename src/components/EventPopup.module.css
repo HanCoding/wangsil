@@ -178,11 +178,19 @@
 /* Tax note */
 .taxNote {
   margin: 0;
-  padding: 10px 24px 14px;
+  padding: 2px 24px;
   font-family: var(--font-korean);
   font-size: 0.72rem;
   color: var(--color-text-light);
   text-align: center;
+}
+
+.taxNote:first-of-type {
+  padding-top: 10px;
+}
+
+.taxNote:last-of-type {
+  padding-bottom: 14px;
 }
 
 /* ---------- Footer controls ---------- */

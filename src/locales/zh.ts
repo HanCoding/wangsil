@@ -466,6 +466,8 @@ const zh: Translations = {
     fillerFull: '全脸玻尿酸 10cc',
     fillerFullPrice: '₩890,000',
     taxNote: '★ 不含增值税',
+    portraitConsent: '* 肖像权同意',
+    eventPeriod: '* 活动时间：6月',
     hideToday: '今天不再显示',
     close: '关闭 ✕',
   },

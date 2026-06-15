@@ -466,6 +466,8 @@ const en: Translations = {
     fillerFull: 'Full Face Filler 10cc',
     fillerFullPrice: '₩890,000',
     taxNote: '★ VAT excluded',
+    portraitConsent: '* Portrait rights consent',
+    eventPeriod: '* Event period: June',
     hideToday: 'Do not show today',
     close: 'Close ✕',
   },
