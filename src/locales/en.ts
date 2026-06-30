@@ -467,7 +467,7 @@ const en: Translations = {
     fillerFullPrice: '₩890,000',
     taxNote: '★ VAT excluded',
     portraitConsent: '* Portrait rights consent',
-    eventPeriod: '* Event period: June',
+    eventPeriod: '* Event period: July',
     hideToday: 'Do not show today',
     close: 'Close ✕',
   },

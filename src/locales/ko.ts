@@ -465,7 +465,7 @@ const ko = {
     fillerFullPrice: '89만원',
     taxNote: '★ 부가세 별도',
     portraitConsent: '* 초상권 동의',
-    eventPeriod: '* 행사 시간 : 6월',
+    eventPeriod: '* 행사 시간 : 7월',
     hideToday: '오늘은 더 보지 않기',
     close: '닫기 ✕',
   },

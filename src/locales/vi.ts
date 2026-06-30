@@ -467,7 +467,7 @@ const vi: Translations = {
     fillerFullPrice: '₩890,000',
     taxNote: '★ Chưa bao gồm VAT',
     portraitConsent: '* Đồng ý quyền chân dung',
-    eventPeriod: '* Thời gian sự kiện: Tháng 6',
+    eventPeriod: '* Thời gian sự kiện: Tháng 7',
     hideToday: 'Không hiển thị hôm nay',
     close: 'Đóng ✕',
   },
