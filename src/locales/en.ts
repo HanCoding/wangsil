@@ -444,8 +444,6 @@ const en: Translations = {
     skinTitle: 'Skin Event',
     skinBotox: 'Full Face Skin Botox',
     skinBotoxPrice: '₩100,000',
-    skinHydro: 'Hydro Shot',
-    skinHydroPrice: '₩59,000',
     eyeTitle: 'Eye Surgery Event',
     eyeFatRepo: 'Lower Eyelid Fat Repositioning',
     eyeFatRepoPrice: '₩700,000',

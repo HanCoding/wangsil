@@ -442,8 +442,6 @@ const ko = {
     skinTitle: '피부 이벤트',
     skinBotox: '얼굴 스킨보톡스',
     skinBotoxPrice: '10만원',
-    skinHydro: '물광주사',
-    skinHydroPrice: '5.9만원',
     eyeTitle: '눈성형 이벤트',
     eyeFatRepo: '눈밑지방재배치',
     eyeFatRepoPrice: '70만원',

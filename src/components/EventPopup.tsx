@@ -50,10 +50,6 @@ export default function EventPopup() {
                   <span className={styles.itemName}>{p.skinBotox}</span>
                   <span className={styles.itemPrice}>{p.skinBotoxPrice}</span>
                 </li>
-                <li>
-                  <span className={styles.itemName}>{p.skinHydro}</span>
-                  <span className={styles.itemPrice}>{p.skinHydroPrice}</span>
-                </li>
               </ul>
             </section>
 

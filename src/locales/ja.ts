@@ -444,8 +444,6 @@ const ja: Translations = {
     skinTitle: 'スキンイベント',
     skinBotox: '顔全体スキンボトックス',
     skinBotoxPrice: '₩100,000',
-    skinHydro: '水光注射',
-    skinHydroPrice: '₩59,000',
     eyeTitle: '目の整形イベント',
     eyeFatRepo: '下まぶた脂肪再配置',
     eyeFatRepoPrice: '₩700,000',

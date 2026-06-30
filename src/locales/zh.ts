@@ -444,8 +444,6 @@ const zh: Translations = {
     skinTitle: '皮肤活动',
     skinBotox: '全脸肉毒素',
     skinBotoxPrice: '₩100,000',
-    skinHydro: '水光针',
-    skinHydroPrice: '₩59,000',
     eyeTitle: '眼部整形活动',
     eyeFatRepo: '下眼睑脂肪重置',
     eyeFatRepoPrice: '₩700,000',

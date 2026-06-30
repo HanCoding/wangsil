@@ -444,8 +444,6 @@ const vi: Translations = {
     skinTitle: 'Sự kiện da',
     skinBotox: 'Botox da toàn khuôn mặt',
     skinBotoxPrice: '₩100,000',
-    skinHydro: 'Tiêm dưỡng ẩm da',
-    skinHydroPrice: '₩59,000',
     eyeTitle: 'Sự kiện phẫu thuật mắt',
     eyeFatRepo: 'Tái định vị mỡ mi dưới',
     eyeFatRepoPrice: '₩700,000',
