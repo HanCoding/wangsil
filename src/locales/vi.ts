@@ -464,7 +464,6 @@ const vi: Translations = {
     fillerFull: 'Filler toàn mặt 10cc',
     fillerFullPrice: '₩890,000',
     taxNote: '★ Chưa bao gồm VAT',
-    portraitConsent: '* Đồng ý quyền chân dung',
     eventPeriod: '* Thời gian sự kiện: Tháng 7',
     hideToday: 'Không hiển thị hôm nay',
     close: 'Đóng ✕',

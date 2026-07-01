@@ -464,7 +464,6 @@ const ja: Translations = {
     fillerFull: 'フルフェイスフィラー 10cc',
     fillerFullPrice: '₩890,000',
     taxNote: '★ 税別',
-    portraitConsent: '* 肖像権同意',
     eventPeriod: '* イベント期間：7月',
     hideToday: '今日は表示しない',
     close: '閉じる ✕',

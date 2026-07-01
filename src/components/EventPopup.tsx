@@ -97,7 +97,6 @@ export default function EventPopup() {
             </section>
 
             <p className={styles.taxNote}>{p.taxNote}</p>
-            <p className={styles.taxNote}>{p.portraitConsent}</p>
             <p className={styles.taxNote}>{p.eventPeriod}</p>
           </div>
         </a>
