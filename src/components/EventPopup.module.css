@@ -12,6 +12,21 @@
   backdrop-filter: blur(2px);
 }
 
+.stageWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.stage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  max-width: 100%;
+}
+
 .popup {
   background: var(--color-white);
   width: 100%;
@@ -23,6 +38,7 @@
   display: flex;
   flex-direction: column;
   max-height: 90vh;
+  flex-shrink: 0;
 }
 
 @keyframes popupIn {
@@ -100,6 +116,27 @@
   color: #fff;
 }
 
+/* ---------- Slide indicator dots (mobile carousel only) ---------- */
+.dots {
+  display: none;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.dotActive {
+  background: var(--color-white);
+  transform: scale(1.25);
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 600px) {
   .overlay {
@@ -107,11 +144,31 @@
     padding: 0;
   }
 
+  .stageWrap {
+    width: 100%;
+  }
+
+  .stage {
+    width: 100%;
+    gap: 0;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .stage::-webkit-scrollbar {
+    display: none;
+  }
+
   .popup {
     max-width: 100%;
     max-height: 85vh;
     border-radius: 14px 14px 0 0;
     animation: popupInMobile 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
   }
 
   @keyframes popupInMobile {
@@ -128,5 +185,12 @@
   .footer {
     padding: 14px 20px;
     padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
   }
 }
