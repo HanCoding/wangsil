@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { useT } from '../../context/LocaleContext'
 import PopupShell from './PopupShell'
 import styles from './HicoEventPopup.module.css'
@@ -6,9 +7,10 @@ interface HicoEventPopupProps {
   hideToday: boolean
   onHideTodayChange: (value: boolean) => void
   onClose: () => void
+  dots?: ReactNode
 }
 
-export default function HicoEventPopup({ hideToday, onHideTodayChange, onClose }: HicoEventPopupProps) {
+export default function HicoEventPopup({ hideToday, onHideTodayChange, onClose, dots }: HicoEventPopupProps) {
   const { popupHico: p } = useT()
 
   const categories = [
@@ -64,6 +66,7 @@ export default function HicoEventPopup({ hideToday, onHideTodayChange, onClose }
       hideTodayLabel={p.hideToday}
       closeLabel={p.close}
       maxWidth={400}
+      dots={dots}
     >
       <div className={styles.header}>
         <span className={styles.monthBadge}>{p.monthBadge}</span>

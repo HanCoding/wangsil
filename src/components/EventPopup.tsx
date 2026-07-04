@@ -56,6 +56,21 @@ export default function EventPopup() {
 
   const slideCount = (hicoOpen ? 1 : 0) + (summerOpen ? 1 : 0)
 
+  const dots =
+    slideCount > 1 ? (
+      <>
+        {Array.from({ length: slideCount }, (_, i) => (
+          <button
+            key={i}
+            type="button"
+            className={i === activeIndex ? `${styles.dot} ${styles.dotActive}` : styles.dot}
+            aria-label={`${i + 1}번째 이벤트 보기`}
+            onClick={() => goToSlide(i)}
+          />
+        ))}
+      </>
+    ) : null
+
   return (
     <div
       className={styles.overlay}
@@ -63,29 +78,23 @@ export default function EventPopup() {
         if (e.target === e.currentTarget) closeAll()
       }}
     >
-      <div className={styles.stageWrap}>
-        {slideCount > 1 && (
-          <div className={styles.dots}>
-            {Array.from({ length: slideCount }, (_, i) => (
-              <button
-                key={i}
-                type="button"
-                className={i === activeIndex ? `${styles.dot} ${styles.dotActive}` : styles.dot}
-                aria-label={`${i + 1}번째 이벤트 보기`}
-                onClick={() => goToSlide(i)}
-              />
-            ))}
-          </div>
+      <div className={styles.stage} ref={stageRef} onScroll={handleStageScroll}>
+        {hicoOpen && (
+          <HicoEventPopup
+            hideToday={hideToday}
+            onHideTodayChange={setHideToday}
+            onClose={() => handleClose('hico')}
+            dots={dots}
+          />
         )}
-
-        <div className={styles.stage} ref={stageRef} onScroll={handleStageScroll}>
-          {hicoOpen && (
-            <HicoEventPopup hideToday={hideToday} onHideTodayChange={setHideToday} onClose={() => handleClose('hico')} />
-          )}
-          {summerOpen && (
-            <SummerEventPopup hideToday={hideToday} onHideTodayChange={setHideToday} onClose={() => handleClose('summer')} />
-          )}
-        </div>
+        {summerOpen && (
+          <SummerEventPopup
+            hideToday={hideToday}
+            onHideTodayChange={setHideToday}
+            onClose={() => handleClose('summer')}
+            dots={dots}
+          />
+        )}
       </div>
     </div>
   )

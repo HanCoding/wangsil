@@ -12,13 +12,6 @@
   backdrop-filter: blur(2px);
 }
 
-.stageWrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-}
-
 .stage {
   display: flex;
   align-items: flex-start;
@@ -127,13 +120,13 @@
   border-radius: 50%;
   border: none;
   padding: 0;
-  background: rgba(255, 255, 255, 0.45);
+  background: var(--color-beige);
   cursor: pointer;
   transition: var(--transition-fast);
 }
 
 .dotActive {
-  background: var(--color-white);
+  background: var(--color-gold);
   transform: scale(1.25);
 }
 
@@ -142,10 +135,6 @@
   .overlay {
     align-items: flex-end;
     padding: 0;
-  }
-
-  .stageWrap {
-    width: 100%;
   }
 
   .stage {
@@ -190,7 +179,9 @@
   .dots {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 8px;
-    margin-bottom: 10px;
+    padding: 10px 0;
+    flex-shrink: 0;
   }
 }

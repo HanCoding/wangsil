@@ -10,6 +10,7 @@ interface PopupShellProps {
   hideTodayLabel: string
   closeLabel: string
   maxWidth?: number
+  dots?: ReactNode
   children: ReactNode
 }
 
@@ -22,6 +23,7 @@ export default function PopupShell({
   hideTodayLabel,
   closeLabel,
   maxWidth,
+  dots,
   children,
 }: PopupShellProps) {
   return (
@@ -35,6 +37,8 @@ export default function PopupShell({
       >
         <div className={shellStyles.body}>{children}</div>
       </a>
+
+      {dots && <div className={shellStyles.dots}>{dots}</div>}
 
       <div className={shellStyles.footer}>
         <label className={shellStyles.checkLabel}>

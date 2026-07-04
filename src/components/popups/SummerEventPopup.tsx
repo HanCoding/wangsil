@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import { useT } from '../../context/LocaleContext'
 import PopupShell from './PopupShell'
 import styles from './SummerEventPopup.module.css'
@@ -6,6 +7,7 @@ interface SummerEventPopupProps {
   hideToday: boolean
   onHideTodayChange: (value: boolean) => void
   onClose: () => void
+  dots?: ReactNode
 }
 
 interface PriceRowProps {
@@ -32,7 +34,7 @@ function PriceRow({ name, sub, oldPrice, newPrice, className }: PriceRowProps) {
   )
 }
 
-export default function SummerEventPopup({ hideToday, onHideTodayChange, onClose }: SummerEventPopupProps) {
+export default function SummerEventPopup({ hideToday, onHideTodayChange, onClose, dots }: SummerEventPopupProps) {
   const { popupSummer: p } = useT()
 
   return (
@@ -45,6 +47,7 @@ export default function SummerEventPopup({ hideToday, onHideTodayChange, onClose
       hideTodayLabel={p.hideToday}
       closeLabel={p.close}
       maxWidth={400}
+      dots={dots}
     >
       <div className={styles.header}>
         <span className={styles.monthBadge}>{p.monthBadge}</span>
