@@ -11,6 +11,7 @@ interface PopupShellProps {
   closeLabel: string
   maxWidth?: number
   dots?: ReactNode
+  tabBar?: ReactNode
   children: ReactNode
 }
 
@@ -24,6 +25,7 @@ export default function PopupShell({
   closeLabel,
   maxWidth,
   dots,
+  tabBar,
   children,
 }: PopupShellProps) {
   return (
@@ -39,6 +41,7 @@ export default function PopupShell({
       </a>
 
       {dots && <div className={shellStyles.dots}>{dots}</div>}
+      {tabBar}
 
       <div className={shellStyles.footer}>
         <label className={shellStyles.checkLabel}>

@@ -441,6 +441,7 @@ const ko = {
     title: '왕실의원\n이벤트',
     subtitle: '자연스러운 아름다움,\n임헌각 원장의 섬세한 디자인으로 완성합니다.',
     ariaLabel: '왕실의원 7월 이벤트 안내 — 하이코리프팅·리프팅·피부·눈성형·동안성형·필러',
+    tabLabel: '리프팅',
     hicoTitle: '하이코 리프팅',
     hico8: '8줄 추가',
     hico8Price: '35만원',
@@ -491,6 +492,7 @@ const ko = {
   popupSummer: {
     eyebrow: 'SUMMER BIG EVENT',
     monthBadge: '7월',
+    tabLabel: '안면거상',
     locationLine: '부평역 1번출구 왕실의원 오세요',
     vatNote: '(모든수술 부가세 10% 별도)',
     ariaLabel: '왕실의원 여름 빅이벤트 — 이마거상술·미니거상술·눈썹거상술·눈밑지방제거·실리프팅·콧대',
@@ -541,6 +543,7 @@ const ko = {
     title: '왕실의원\n필러 이벤트',
     subtitle: '자연스러운 볼륨감,\n부위별 맞춤 필러로 완성합니다.',
     ariaLabel: '왕실의원 필러 이벤트 안내 — 두상필러·어깨필러·손등필러·힙필러',
+    tabLabel: '필러',
     fillerTitle: '필러 EVENT',
     headFiller: '두상필러',
     headFillerPrice: '100만원~300만원',

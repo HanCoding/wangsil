@@ -443,6 +443,7 @@ const en: Translations = {
     title: 'Wangsil Clinic\nEvent',
     subtitle: 'Natural beauty,\ncompleted with Dr. Lim Heon-gak\'s meticulous design.',
     ariaLabel: 'Wangsil Clinic July Event Guide — Hico Lifting, Lifting, Skin, Eye, Anti-Aging & Filler',
+    tabLabel: 'Lifting',
     hicoTitle: 'Hico Lifting',
     hico8: '8 Lines Added',
     hico8Price: '₩350,000',
@@ -493,6 +494,7 @@ const en: Translations = {
   popupSummer: {
     eyebrow: 'SUMMER BIG EVENT',
     monthBadge: 'July',
+    tabLabel: 'Facelift',
     locationLine: 'Visit Wangsil Clinic, Exit 1 of Bupyeong Station',
     vatNote: '(10% VAT excluded on all surgeries)',
     ariaLabel: 'Wangsil Clinic Summer Big Event — Forehead Lift, Mini Lift, Brow Lift, Under-Eye Fat Removal, Thread Lift, Nose Bridge',
@@ -543,6 +545,7 @@ const en: Translations = {
     title: 'Wangsil Clinic\nFiller Event',
     subtitle: 'Natural volume,\ncustomized filler treatments for every area.',
     ariaLabel: 'Wangsil Clinic Filler Event — Head Filler, Shoulder Filler, Hand Filler, Hip Filler',
+    tabLabel: 'Filler',
     fillerTitle: 'FILLER EVENT',
     headFiller: 'Head Filler',
     headFillerPrice: '₩1,000,000–₩3,000,000',

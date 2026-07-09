@@ -1,0 +1,42 @@
+/* DesktopEventPopup.module.css */
+
+.tabBar {
+  display: flex;
+  flex-shrink: 0;
+  border-top: 1px solid var(--color-beige-dark);
+  background: var(--color-cream);
+}
+
+.tab {
+  flex: 1;
+  padding: 11px 4px;
+  border: none;
+  border-right: 1px solid var(--color-beige-dark);
+  background: transparent;
+  font-family: var(--font-korean);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  background: var(--color-beige);
+  color: var(--color-dark);
+}
+
+.tabActive {
+  background: var(--color-gold);
+  color: #fff;
+}
+
+.tabActive:hover {
+  background: var(--color-gold);
+  color: #fff;
+}

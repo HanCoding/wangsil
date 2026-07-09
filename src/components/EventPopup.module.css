@@ -12,12 +12,16 @@
   backdrop-filter: blur(2px);
 }
 
-.stage {
+.desktopStage {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 20px;
+  width: 100%;
   max-width: 100%;
+}
+
+.stage {
+  display: none;
 }
 
 .popup {
@@ -30,8 +34,7 @@
   animation: popupIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) both;
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
-  max-height: 90vh;
+  height: 90vh;
   flex-shrink: 0;
 }
 
@@ -139,7 +142,12 @@
     padding: 0;
   }
 
+  .desktopStage {
+    display: none;
+  }
+
   .stage {
+    display: flex;
     width: 100%;
     gap: 0;
     justify-content: flex-start;
@@ -155,8 +163,7 @@
 
   .popup {
     max-width: 100%;
-    min-height: 85vh;
-    max-height: 85vh;
+    height: 85vh;
     border-radius: 14px 14px 0 0;
     animation: popupInMobile 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     flex: 0 0 100%;

@@ -443,6 +443,7 @@ const vi: Translations = {
     title: 'Wangsil Clinic\nSự kiện',
     subtitle: 'Vẻ đẹp tự nhiên,\nhoàn thiện bởi thiết kế tinh tế của Giám đốc Lim Heon-gak.',
     ariaLabel: 'Wangsil Clinic — Ưu đãi sự kiện tháng 7: Hico Lifting, Lifting, Da, Mắt, Trẻ hóa & Filler',
+    tabLabel: 'Nâng cơ',
     hicoTitle: 'Hico Lifting',
     hico8: 'Thêm 8 sợi',
     hico8Price: '₩350,000',
@@ -493,6 +494,7 @@ const vi: Translations = {
   popupSummer: {
     eyebrow: 'SUMMER BIG EVENT',
     monthBadge: 'Tháng 7',
+    tabLabel: 'Nâng mặt',
     locationLine: 'Ghé Wangsil Clinic, Cổng 1 ga Bupyeong',
     vatNote: '(Chưa bao gồm 10% VAT cho mọi phẫu thuật)',
     ariaLabel: 'Wangsil Clinic — Ưu đãi hè lớn: Nâng trán, Mini Lift, Nâng cung mày, Loại bỏ mỡ mi dưới, Thread Lift, Sống mũi',
@@ -543,6 +545,7 @@ const vi: Translations = {
     title: 'Wangsil Clinic\nSự kiện Filler',
     subtitle: 'Đường nét tự nhiên,\nfiller tùy chỉnh theo từng vùng.',
     ariaLabel: 'Wangsil Clinic Sự kiện Filler — Filler đầu, Filler vai, Filler mu bàn tay, Filler hông',
+    tabLabel: 'Filler',
     fillerTitle: 'SỰ KIỆN FILLER',
     headFiller: 'Filler đầu',
     headFillerPrice: '1.000.000₩–3.000.000₩',

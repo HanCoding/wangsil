@@ -443,6 +443,7 @@ const zh: Translations = {
     title: '王室医院\n活动',
     subtitle: '自然的美丽，\n由林憲珏院长的精细设计完成。',
     ariaLabel: '王室医院 7月活动优惠 — 高频线雕·提升·皮肤·眼部·抗衰老·填充',
+    tabLabel: '提升',
     hicoTitle: '高频线雕',
     hico8: '追加8条',
     hico8Price: '₩350,000',
@@ -493,6 +494,7 @@ const zh: Translations = {
   popupSummer: {
     eyebrow: 'SUMMER BIG EVENT',
     monthBadge: '7月',
+    tabLabel: '面部提升',
     locationLine: '富平站1号出口 王室医院',
     vatNote: '（所有手术均不含10%增值税）',
     ariaLabel: '王室医院夏季大活动 — 额头提升术·迷你提升术·眉上提术·下眼脂肪去除·埋线提升·鼻梁',
@@ -543,6 +545,7 @@ const zh: Translations = {
     title: '王室医院\n玻尿酸填充活动',
     subtitle: '自然的立体感，\n为各部位量身定制填充。',
     ariaLabel: '王室医院玻尿酸填充活动 — 头部填充·肩部填充·手背填充·臀部填充',
+    tabLabel: '填充',
     fillerTitle: '玻尿酸填充 EVENT',
     headFiller: '头部填充',
     headFillerPrice: '100万~300万韩元',

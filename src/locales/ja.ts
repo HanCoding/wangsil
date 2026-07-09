@@ -443,6 +443,7 @@ const ja: Translations = {
     title: 'ワンシル医院\nイベント',
     subtitle: '自然な美しさを、\nイム・ホンガク院長の繊細なデザインで完成させます。',
     ariaLabel: 'ワンシル医院 7月イベント案内 — ハイコリフティング・リフティング・スキン・目・若返り・フィラー',
+    tabLabel: 'リフティング',
     hicoTitle: 'ハイコリフティング',
     hico8: '8本追加',
     hico8Price: '₩350,000',
@@ -493,6 +494,7 @@ const ja: Translations = {
   popupSummer: {
     eyebrow: 'SUMMER BIG EVENT',
     monthBadge: '7月',
+    tabLabel: '顔面リフト',
     locationLine: '富平駅1番出口 ワンシル医院へ',
     vatNote: '（全ての手術は10%税別）',
     ariaLabel: 'ワンシル医院 サマービッグイベント — 額挙上術・ミニリフト・眉毛挙上術・下眼脂肪除去・スレッドリフト・鼻筋',
@@ -543,6 +545,7 @@ const ja: Translations = {
     title: 'ワンシル医院\nフィラーイベント',
     subtitle: '自然なボリューム感を、\n部位別オーダーメイドフィラーで完成します。',
     ariaLabel: 'ワンシル医院 フィラーイベント案内 — 頭部フィラー・肩フィラー・手甲フィラー・ヒップフィラー',
+    tabLabel: 'フィラー',
     fillerTitle: 'フィラー EVENT',
     headFiller: '頭部フィラー',
     headFillerPrice: '100万〜300万ウォン',

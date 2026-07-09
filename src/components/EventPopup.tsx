@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import HicoEventPopup from './popups/HicoEventPopup'
 import SummerEventPopup from './popups/SummerEventPopup'
 import FillerEventPopup from './popups/FillerEventPopup'
+import DesktopEventPopup from './popups/DesktopEventPopup'
 import styles from './EventPopup.module.css'
 
 const STORAGE_KEY = 'wangsil_event_popup_hide_date_v3'
@@ -48,6 +49,13 @@ export default function EventPopup() {
     }
   }
 
+  const handleDesktopClose = () => {
+    if (hideToday) {
+      localStorage.setItem(STORAGE_KEY, new Date().toDateString())
+    }
+    closeAll()
+  }
+
   const handleStageScroll = () => {
     const el = stageRef.current
     if (!el || el.clientWidth === 0) return
@@ -84,6 +92,14 @@ export default function EventPopup() {
         if (e.target === e.currentTarget) closeAll()
       }}
     >
+      <div className={styles.desktopStage}>
+        <DesktopEventPopup
+          hideToday={hideToday}
+          onHideTodayChange={setHideToday}
+          onClose={handleDesktopClose}
+        />
+      </div>
+
       <div className={styles.stage} ref={stageRef} onScroll={handleStageScroll}>
         {hicoOpen && (
           <HicoEventPopup
