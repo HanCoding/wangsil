@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import HicoEventPopup from './popups/HicoEventPopup'
 import SummerEventPopup from './popups/SummerEventPopup'
+import FillerEventPopup from './popups/FillerEventPopup'
 import styles from './EventPopup.module.css'
 
 const STORAGE_KEY = 'wangsil_event_popup_hide_date_v3'
@@ -11,6 +12,7 @@ export default function EventPopup() {
   const [visibility, setVisibility] = useState<Visibility>('loading')
   const [hicoOpen, setHicoOpen] = useState(true)
   const [summerOpen, setSummerOpen] = useState(true)
+  const [fillerOpen, setFillerOpen] = useState(true)
   const [hideToday, setHideToday] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
   const stageRef = useRef<HTMLDivElement>(null)
@@ -24,10 +26,11 @@ export default function EventPopup() {
   const closeAll = () => {
     setHicoOpen(false)
     setSummerOpen(false)
+    setFillerOpen(false)
     setVisibility('done')
   }
 
-  const handleClose = (which: 'hico' | 'summer') => {
+  const handleClose = (which: 'hico' | 'summer' | 'filler') => {
     if (hideToday) {
       localStorage.setItem(STORAGE_KEY, new Date().toDateString())
       closeAll()
@@ -35,10 +38,13 @@ export default function EventPopup() {
     }
     if (which === 'hico') {
       setHicoOpen(false)
-      if (!summerOpen) setVisibility('done')
-    } else {
+      if (!summerOpen && !fillerOpen) setVisibility('done')
+    } else if (which === 'summer') {
       setSummerOpen(false)
-      if (!hicoOpen) setVisibility('done')
+      if (!hicoOpen && !fillerOpen) setVisibility('done')
+    } else {
+      setFillerOpen(false)
+      if (!hicoOpen && !summerOpen) setVisibility('done')
     }
   }
 
@@ -52,9 +58,9 @@ export default function EventPopup() {
     stageRef.current?.scrollTo({ left: index * stageRef.current.clientWidth, behavior: 'smooth' })
   }
 
-  if (visibility !== 'visible' || (!hicoOpen && !summerOpen)) return null
+  if (visibility !== 'visible' || (!hicoOpen && !summerOpen && !fillerOpen)) return null
 
-  const slideCount = (hicoOpen ? 1 : 0) + (summerOpen ? 1 : 0)
+  const slideCount = (hicoOpen ? 1 : 0) + (summerOpen ? 1 : 0) + (fillerOpen ? 1 : 0)
 
   const dots =
     slideCount > 1 ? (
@@ -92,6 +98,14 @@ export default function EventPopup() {
             hideToday={hideToday}
             onHideTodayChange={setHideToday}
             onClose={() => handleClose('summer')}
+            dots={dots}
+          />
+        )}
+        {fillerOpen && (
+          <FillerEventPopup
+            hideToday={hideToday}
+            onHideTodayChange={setHideToday}
+            onClose={() => handleClose('filler')}
             dots={dots}
           />
         )}
