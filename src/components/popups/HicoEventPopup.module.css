@@ -145,6 +145,21 @@
   gap: 6px !important;
 }
 
+.itemRow {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.itemDesc {
+  font-family: var(--font-korean);
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  padding-left: 2px;
+}
+
 .subPrices {
   display: flex;
   flex-wrap: wrap;

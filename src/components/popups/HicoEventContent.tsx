@@ -6,27 +6,6 @@ export default function HicoEventContent() {
 
   const categories = [
     {
-      key: 'hico',
-      theme: styles.themePurple,
-      title: p.hicoTitle,
-      items: [
-        [p.hico8, p.hico8Price],
-        [p.hico12, p.hico12Price],
-        [p.hicoComboThread, p.hicoComboThreadPrice],
-      ],
-    },
-    {
-      key: 'lifting',
-      theme: styles.themeViolet,
-      title: p.liftingTitle,
-      items: [
-        [p.liftingPdo, p.liftingPdoPrice],
-        [p.liftingPcl, p.liftingPclPrice],
-        [p.liftingJamber, p.liftingJamberPrice],
-        [p.liftingForehead, p.liftingForeheadPrice],
-      ],
-    },
-    {
       key: 'skin',
       theme: styles.themeNavy,
       title: p.skinTitle,
@@ -55,6 +34,33 @@ export default function HicoEventContent() {
         <h2 className={styles.title}>{p.title}</h2>
         <p className={styles.subtitle}>{p.subtitle}</p>
       </div>
+
+      <section className={`${styles.card} ${styles.themeViolet}`}>
+        <h3 className={styles.cardTitle}>{p.wangsilTitle}</h3>
+        <ul className={styles.list}>
+          <li className={styles.subGroup}>
+            <span className={styles.itemRow}>
+              <span className={styles.itemName}>{p.wangsilPcl}</span>
+              <span className={styles.itemPrice}>{p.wangsilPclPrice}</span>
+            </span>
+            <span className={styles.itemDesc}>{p.wangsilPclDesc}</span>
+          </li>
+          <li className={styles.subGroup}>
+            <span className={styles.itemRow}>
+              <span className={styles.itemName}>{p.wangsilPdoJamber}</span>
+              <span className={styles.itemPrice}>{p.wangsilPdoJamberPrice}</span>
+            </span>
+            <span className={styles.itemDesc}>{p.wangsilPdoJamberDesc}</span>
+          </li>
+          <li className={styles.subGroup}>
+            <span className={styles.itemRow}>
+              <span className={styles.itemName}>{p.wangsilJamber}</span>
+              <span className={styles.itemPrice}>{p.wangsilJamberPrice}</span>
+            </span>
+            <span className={styles.itemDesc}>{p.wangsilJamberDesc}</span>
+          </li>
+        </ul>
+      </section>
 
       {categories.map((cat) => (
         <section key={cat.key} className={`${styles.card} ${cat.theme}`}>
